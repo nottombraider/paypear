@@ -321,6 +321,7 @@
 
     .summary-section--wrapper {
         position: relative;
+        width: 1200px;
     }
 
     .summary-section--main-img-list {
