@@ -41,10 +41,11 @@ window.onload = () => {
         event.preventDefault();
 
         emailjs.sendForm('default_service', 'template_joxk39f', event.target)
-            .then(function() {
-                console.log('SUCCESS!');
-            }, function(error) {
-                console.log('FAILED...', error);
-            });
+            .then(
+                () => document.getElementById('contact-form').reset(),
+                (error) => {
+                    console.log('FAILED...', error);
+                }
+            );
     } )
 }
