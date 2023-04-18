@@ -1,0 +1,63 @@
+.h1 {
+    display: block;
+    color: #252117;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.h2 {
+    font-size: 2.8125rem;
+    line-height: 3rem;
+    color: #252117;
+    font-weight: 700;
+}
+
+.h3 {
+    font-size: 2.175rem;
+    color: #252117;
+    line-height: 3rem;
+    font-weight: 700;
+}
+
+.h4 {
+    font-weight: 300;
+    font-size: 1.9rem;
+    line-height: 3rem;
+    color: #252117;
+}
+
+.h5 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    font-weight: 300;
+}
+
+.main-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+
+.button {
+    text-transform: uppercase;
+    border: 1px solid;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #252117 !important;
+    color: white;
+}
+
+.input, .textarea {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #d9d9d9;
+}
+
+.label--text {
+    font-weight: 300;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+}
