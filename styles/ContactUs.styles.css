@@ -1,0 +1,68 @@
+.main {
+    width: 100%;
+    height: max-content;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contacts-section, .contacts-section--description {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contacts-section, .contact-form-section {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.contacts-section {
+    margin-top: 1.5rem;
+}
+
+.contacts-section--description__text,
+.contact-form-section,
+.contact-form-section--form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-section {
+    gap: 1rem;
+    max-width: 36rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.contact-form-section--title {
+    padding-bottom: 1.5rem;
+    display: none;
+}
+
+.contact-form-section--form {
+    gap: 0.5rem;
+    max-width: 36rem;
+    margin-top: 1rem;
+}
+
+.contact-form-section--form__input,
+.contact-form-section--form__textarea {
+    width: 100%;
+}
+
+.contact-form-section--form__textarea {
+    resize: none;
+}

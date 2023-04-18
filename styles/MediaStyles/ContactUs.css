@@ -1,0 +1,47 @@
+/*md*/
+@media (min-width: 768px) {
+    .footer--content-section {
+        flex-direction: row;
+        gap: 4rem;
+        margin: 0 auto;
+    }
+
+    .main{
+        max-width: 42rem;
+    }
+}
+
+/*lg*/
+@media (min-width: 1024px) {
+    .main-wrapper {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .contacts-section--description {
+        margin-top: 0;
+    }
+
+    .contact-form-section {
+        width: 18rem;
+    }
+
+    .contact-form-section--title {
+        display: block;
+    }
+
+    .contact-form-section--form {
+        margin-top: 0;
+    }
+}
+
+/*xl*/
+@media (min-width: 1200px) {
+    .main {
+        max-width: 72rem;
+    }
+
+    .main-wrapper {
+        gap: 2rem;
+    }
+}
