@@ -1,5 +1,9 @@
 /*md*/
 @media (min-width: 768px) {
+    .main {
+        padding-top: 3rem;
+    }
+
     .main-wrapper {
         margin-top: 2rem;
         min-height: 50vh!important;
