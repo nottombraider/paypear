@@ -11,6 +11,7 @@
     width: 12rem;
     height: 12rem;
     margin-top: 1.5rem;
+    display: flex;
 }
 
 .empty-rhombus {

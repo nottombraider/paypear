@@ -9,8 +9,6 @@
 .nav-header {
     position: fixed;
     width: 100%;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
     top: 0;
     backdrop-filter: blur(0.25rem);
     z-index: 50;
@@ -24,18 +22,18 @@
 .nav-list {
     display: flex;
     justify-content: space-between;
-    padding: 0 1.5rem;
+    padding: 1rem 1.5rem 0.125rem;
     margin: 0 auto;
 }
 
 .nav-list li a {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
-    padding-bottom: 0.5rem;
     border-bottom: 0.25rem solid transparent;
 }
 
-.nav-list li a:hover {
+
+.nav-list li a:hover:not(.nav-item-selected) {
     border-bottom: 0.25rem solid #d9d9d9;
 }
 

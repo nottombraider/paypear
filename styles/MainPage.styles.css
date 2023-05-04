@@ -116,6 +116,9 @@
 
 .description-section {
     background-color: #FFFFFF;
+    -webkit-box-shadow: 0 0 1.5rem 0.25rem rgba(255,255,255,1);
+    -moz-box-shadow: 0 0 1.5rem 0.25rem rgba(255,255,255,1);
+    box-shadow: 0 0 1.5rem 0.25rem rgba(255,255,255,1);
 }
 
 .description-section--header {
@@ -135,12 +138,12 @@
 
 .description-section--header-bg {
     width: 100%;
-    height: 58.5rem;
+    height: 40rem;
     overflow: hidden;
-    background-image: url("../assets/office-work.jpeg");
+    background-image: url("../assets/online-security.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    transform: translate3d(0px, -660px, 0px);
+    transform: translate3d(0px, -350px, 0px);
 }
 
 .description-section--main__title {
@@ -193,6 +196,11 @@
 
 .high-security-standards-list--item-img {
     width: 12rem;
+    align-self: center;
+}
+
+img.high-security-standards-list--item-img__report {
+    transform: rotate(-45deg) scale(2.2);
 }
 
 .description-section--main__cascading__image {
@@ -204,6 +212,9 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 2rem;
+    -webkit-box-shadow: 0 0 1.5rem 0.25rem rgba(255,255,255,1);
+    -moz-box-shadow: 0 0 1.5rem 0.25rem rgba(255,255,255,1);
+    box-shadow: 0 0 1.5rem 0.25rem rgba(255,255,255,1);
 }
 
 .summary-section--header {

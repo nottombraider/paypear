@@ -26,6 +26,10 @@
         margin-left: auto;
     }
 
+    .description-section--header-bg {
+        transform: translate3d(0px, -500px, 0px);
+    }
+
     .summary-section {
         padding-bottom: 6rem;
     }
@@ -62,6 +66,11 @@
         left: 5.5rem;
         width: 25rem;
         height: 25rem;
+    }
+
+    .description-section--header-bg {
+        height: 50rem;
+        transform: translate3d(0px, -650px, 0px);
     }
 
     .summary-section--header {
@@ -193,7 +202,9 @@
     .description-section--header-bg {
         width: 55rem;
         height: 55rem;
-        transform: translate3d(0, 0, 0) rotate(-45deg) scale(1.5);
+        transform: translate3d(0, 0, 0) rotate(-45deg) scale(1.45);
+        background-position-y: -5rem;
+        background-position-x: 5rem;
     }
 
     .description-section--main {
@@ -271,10 +282,12 @@
 
     .cascading__image-wrapper-sm {
         position: absolute;
-        bottom: 4rem;
-        right: 6rem;
+        bottom: 7rem;
+        right: 7rem;
         width: 12rem;
         height: 12rem;
+        border: 2px solid #d9d9d9;
+        z-index: 1;
     }
 
     .cascading__image-rhombus {
@@ -287,14 +300,11 @@
     }
 
     .cascading__image {
-        transform: rotate(-45deg) scale(1.5);
+        position: absolute;
         max-width: 100%;
+        transform: rotate(-45deg) scale(2.2);
+        right: -5rem;
         z-index: 2;
-    }
-
-    .cascading__image-sm {
-        transform: rotate(-45deg) scale(2.5);
-        filter: grayscale(100%)
     }
 
     .bg-rhombus:before, .bg-rhombus:after {
@@ -367,12 +377,16 @@
     }
 }
 
-
 /*xl*/
 @media (min-width: 1280px) {
     .introduction-section--wrapper:before{
         right: 120.5%;
         top: -2391px;
+    }
+
+    .cascading__image-wrapper-sm {
+        bottom: 9rem;
+        right: 5rem;
     }
 }
 
@@ -424,6 +438,11 @@
         top: 3.5rem;
         left: 13.5rem;
     }
+
+    .cascading__image-wrapper-sm {
+        bottom: 5rem;
+        right: 15rem;
+    }
 }
 
 /*3xl 2k screen*/
@@ -443,5 +462,10 @@
 
     .summary-section--wrapper {
         width: 2000px;
+    }
+
+    .cascading__image-wrapper-sm {
+        bottom: 5rem;
+        right: 15rem;
     }
 }
