@@ -8,14 +8,8 @@
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/setUpStyles.css">
-        <link rel="stylesheet" href="styles/typography.css">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="styles/MainPage.styles.css">
-        <link rel="stylesheet" href="styles/MediaStyles/Common.css">
-        <link rel="stylesheet" href="styles/MediaStyles/MainPage.css">
-        <link rel="stylesheet" href="styles/utilsStyles.css">
         <script type="text/javascript" src="index.js"></script>
         <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
@@ -27,172 +21,65 @@
             <nav>
                 <ul class="nav-list">
                     <li>
-                        <a href="#topHome" class="nav-item-selected">
+                        <a href="#topHome" class="nav-header--logo-wrapper">
                             <img src="assets/logo.svg" alt="PayPear" class="nav-header--logo-img" title="PayPear logo" />
+                            <p class="nav-header--logo-text">PAYPEAR</p>
                         </a>
                     </li>
+                    <li class="menu">
+                        <div class="dropdown">
+                            <button class="dropdown-button" title="menu" id="menu">
+                                <svg
+                                    fill="none"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    viewBox="0 0 24 24"
+                                    class="dropdown-button--icon"
+                                >
+                                    <path d="M3 12h18M3 6h18M3 18h18" />
+                                </svg>
+                            </button>
+                            <ul class="dropdown-content" id="dropdown-content">
+                                <li>
+                                    <a href="#topHome" class="nav-item-selected">Home</a>
+                                </li>
+                                <li>
+                                    <a href="pages/Features.html">Features</a>
+                                </li>
+                                <li>
+                                    <a href="#">Gateway</a>
+                                </li>
+                                <li>
+                                    <a href="pages/ContactUs.html">Partner with us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Developers</a>
+                                </li>
+                                <li>
+                                    <a href="pages/Login.html">Login</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
                     <li class="nav-list--item-wrapper">
+                        <a href="#topHome" class="nav-item-selected">Home</a>
                         <a href="pages/Features.html" title="Features">Features</a>
-                        <a href="pages/ContactUs.html" title="Contact us">Contact Us</a>
-                        <a href="pages/Login.html" title="Login">Login</a>
+                        <a href="pages/Features.html" title="Features">Gateway</a>
+                        <a href="pages/ContactUs.html" title="Contact us">Partner with us</a>
+                        <a href="pages/ContactUs.html" title="Contact us">Developers</a>
+                        <a href="pages/Login.html" title="Login">
+                            <div class="primary-button">Login</div>
+                        </a>
                     </li>
                 </ul>
             </nav>
 		</header>
         <main class="main">
             <div id="toast"></div>
-           <div class="main-wrapper">
-               <section class="introduction-section">
-                   <div class="introduction-section--wrapper">
-                       <div class="empty-rhombus introduction-section--empty-rhombus introduction-section--empty-rhombus--top"></div>
-                       <div class="empty-rhombus introduction-section--empty-rhombus introduction-section--header__empty-rhombus"></div>
-                       <header class="introduction-section--header">
-                           <img src="assets/logo.svg" alt="PayPear" class="introduction-section--header__logo">
-                           <div class="bg-rhombus"></div>
-                       </header>
-                       <main class="introduction-section--main">
-                           <h1 class="h1 introduction-section--main__title">PAYPEAR</h1>
-                           <ul class="carousel">
-                               <li class="carousel-item">
-                                       <span class="carousel-text">
-                                           Digital payments
-                                       </span>
-                               </li>
-                               <li class="carousel-item">
-                                       <span class="carousel-text">
-                                           Innovative payment solutions
-                                       </span>
-                               </li>
-                               <li class="carousel-item">
-                                       <span class="carousel-text">
-                                           Data privacy and regulation
-                                       </span>
-                               </li>
-                               <li class="carousel-item">
-                                       <span class="carousel-text">
-                                           Fraud prevention and monitoring
-                                       </span>
-                               </li>
-                               <li class="carousel-item">
-                                       <span class="carousel-text">
-                                           Payment optimization strategy
-                                       </span>
-                               </li>
-                           </ul>
-                       </main>
-                       <footer class="introduction-section--footer">
-                           <div class="introduction-section--footer__rhombus introduction-section--footer__rhombus-big"></div>
-                           <div class="empty-rhombus introduction-section--empty-rhombus introduction-section--footer__empty-rhombus"></div>
-                           <div class="introduction-section--footer__rhombus introduction-section--footer__rhombus-small"></div>
-                       </footer>
-                   </div>
-               </section>
-               <section class="description-section">
-                   <div class="description-section--wrapper">
-                       <header class="description-section--header">
-                           <div class="description-section--header-wrapper-bg">
-                               <div class="description-section--header-bg"></div>
-                           </div>
-                       </header>
-                       <main class="description-section--main">
-                           <div class="description-section--main__gateway">
-                               <h2 class="h2 description-section--main__title">Payment gateway</h2>
-                               <p class="main-text description-section--main__description">
-                                   Integration involves setting up the payment gateway software and configuring it to work with the e-commerce website or other platform. The payment gateway serves as a mediator between the merchant's website and the payment processor, ensuring that the payment is processed securely and that customer data is kept confidential.
-                                   Payment gateway integration also enables merchants to offer a wider range of payment options to their customers, such as credit cards, debit cards, and e-wallets.
-                               </p>
-                           </div>
-                           <div class="description-section--main__security">
-                               <div class="description-section--main__security__desc-wrapper">
-                                   <h2 class="h2 description-section--main__title">
-                                       High security standards
-                                   </h2>
-                                   <p class="main-text description-section--main__description">
-                                       High security is essential for any payment system to protect sensitive user data and prevent fraud. Multiple layers of security, such as encryption and tokenization ensure that data is protected at all times. Security measures are regularly audited and updated to keep up with new threats and vulnerabilities.
-                                   </p>
-                               </div>
-                               <ul class="high-security-standards-list">
-                                   <li class="high-security-standards-list--item">
-                                       <h3 class="h3 high-security-standards-list--item__title">#1</h3>
-                                       <p class="main-text high-security-standards-list--item__description">
-                                           A well-designed user-friendly interface is intuitive and easy in navigation with clear instructions for user satisfaction.
-                                       </p>
-                                       <div class="rhombus-image-wrapper rhombus-image-wrapper--48">
-                                           <img src="assets/phone-scan-qr.jpeg" alt="Scanning QR Code" class="high-security-standards-list--item-img rhombus-image">
-                                       </div>
-                                   </li>
-                                   <li class="high-security-standards-list--item">
-                                       <h3 class="h3 high-security-standards-list--item__title">#2</h3>
-                                       <p class="main-text high-security-standards-list--item__description">
-                                           Optimization of financial reporting and reconciliation maintain the trust of our customers
-                                       </p>
-                                       <div class="rhombus-image-wrapper rhombus-image-wrapper--48">
-                                           <img src="assets/reports.avif" alt="Chart tablets display" class="high-security-standards-list--item-img high-security-standards-list--item-img__report rhombus-image">
-                                       </div>
-                                   </li>
-                               </ul>
-                           </div>
-                           <div class="description-section--main__cascading">
-                               <div>
-                                   <h2 class="h2 description-section--main__title">
-                                       Payment routing and cascading
-                                   </h2>
-                                   <h5 class="h5 description-section--main__subtitle">
-                                       Two strategies used in payment processing to optimize transaction success rates and reduce processing costs
-                                   </h5>
-                                   <p class="high-security-standards-list--item__description__wrapper main-text">
-                               <span>
-                                   Payment routing involves selecting the most optimal payment processor to handle a transaction based on factors such as transaction amount, currency, and location. By routing transactions to the most appropriate processor, merchants can increase the likelihood of transaction success and reduce the risk of declined transactions.
-                               </span>
-                                       <span>
-                                   Cascading is a technique used when processors are available. It involves sending a transaction to the primary processor, and if that processor declines the transaction, routing it to the next available processor until the transaction is successfully processed. Cascading helps to increase transaction success rates and reduce the risk of lost sales.
-                               </span>
-                                   </p>
-                               </div>
-
-                               <div class="description-section--main__cascading__image">
-                                   <div class="rhombus cascading__image-rhombus"></div>
-                                   <div class="cascading__image-wrapper">
-                                       <img src="assets/phone-pay-terminal.avif" alt="Pay with your phone" class="cascading__image">
-                                   </div>
-                                   <div class="cascading__image-wrapper-sm">
-                                   </div>
-                               </div>
-                           </div>
-                       </main>
-                   </div>
-               </section>
-               <section class="summary-section section-bg-img1">
-                   <div class="summary-section--wrapper">
-                       <header class="summary-section--header">
-                           <h2 class="h2">PAYPEAR</h2>
-                       </header>
-                       <main class="summary-section--main">
-                           <ul class="summary-section--main-img-list">
-                               <li class="summary-section--main-img-list__item">
-                                   <div class="summary-section--main-img-list__item-img-wrapper summary-section--main-img-list__item-img-wrapper-1 rhombus-image-wrapper">
-                                       <img src="assets/phone-scan-qr.jpeg" alt="" class="summary-section--main-img-list__item-img rhombus-image">
-                                   </div>
-                               </li>
-                               <li>
-                                   <div class="summary-section--main-img-list__item-img-wrapper summary-section--main-img-list__item-img-wrapper-2 rhombus-image-wrapper">
-                                       <img src="assets/laptop.jpeg" alt="Scanning QR Code" class="summary-section--main-img-list__item-img rhombus-image">
-                                   </div>
-                                   <div class="summary-section--main-img-list__item-img-wrapper summary-section--main-img-list__item-img-wrapper-3 rhombus-image-wrapper">
-                                       <img src="assets/chart-on-tablet-2.jpeg" alt="Chart" class="summary-section--main-img-list__item-img rhombus-image">
-                                   </div>
-                               </li>
-                           </ul>
-                       </main>
-                       <footer class="summary-section--footer">
-                           <h4 class="summary-section--footer__title">Use <span class="summary-section--footer__title-light">payment</span></h4>
-                           <p class="summary-section--footer__description main-text">
-                               Worldwide acceptance without restrictions and limitations
-                           </p>
-                       </footer>
-                   </div>
-               </section>
-           </div>
+            <div class="main-wrapper">
+                hello world
+            </div>
         </main>
         <footer class="footer">
             <a href="#topHome" class="footer--chevron-link chevron" title="Back to top"></a>
