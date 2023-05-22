@@ -1,0 +1,73 @@
+#toast {
+    visibility: hidden;
+    min-width: 16rem;
+    margin-left: -7.8125rem;
+    background-color: #252117;
+    color: #fff;
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 5rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+#toast.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 5rem; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 5rem; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {top: 5rem; opacity: 1;}
+    to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {top: 5rem; opacity: 1;}
+    to {top: 0; opacity: 0;}
+}
+
+.block {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.chevron::before {
+    content: '';
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    border-style: solid;
+    border-width: 0.125rem 0.125rem 0 0;
+    width: 0.5rem;
+    height: 0.5rem;
+    top: -0.05rem;
+    left: 0.025rem;
+    border-color: #252117;
+    transform: rotate(-45deg);
+}
+
+.primary-button {
+    padding: 0.65rem 1.5rem;
+    text-align: center;
+    background-color: var(--green-700);
+    color: var(--green-50);
+    border-radius: 0.5rem;
+}

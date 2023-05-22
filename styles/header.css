@@ -108,7 +108,6 @@ ul.dropdown-content li a {
     color: var(--green-700);
 }
 
-
 /*lg*/
 @media (min-width: 1024px) {
     .nav-list {
