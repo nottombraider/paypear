@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/setUpStyles.css">
+    <link rel="stylesheet" href="../styles/typography.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../styles/MediaStyles/Common.css">
+    <link rel="stylesheet" href="../styles/utilsStyles.css">
+    <script type="text/javascript" src="../index.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <title>PayPear</title>
+</head>
+<body id="topHome" class="body section-bg-img1">
+<header class="nav-header">
+    <nav>
+        <ul class="nav-list">
+            <li>
+                <a href="../index.html">
+                    <img src="../assets/logo.svg" alt="PayPear" class="nav-header--logo-img" title="PayPear logo" />
+                </a>
+            </li>
+            <li class="nav-list--item-wrapper">
+                <a href="/" title="Features" class="nav-item-selected">Features</a>
+                <a href="ContactUs.html" title="Contact us">Contact Us</a>
+                <a href="Login.html" title="Login">Login</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+    <div id="toast"></div>
+</main>
+<footer class="footer">
+    <a href="#topHome" class="footer--chevron-link chevron" title="Back to top"></a>
+    <div class="footer--content">
+        <section  class="footer--content-section">
+            <div>
+                <h3 class="h3 footer--content-section__title">About Us</h3>
+                <div class="footer--content-section__address-wrapper">
+                    <span>Paypear Co. LTD </span>
+                    <span>No.34 CP Tower 3, Building A,</span>
+                    <span>Bangkok Metropolis, Thailand</span>
+                </div>
+            </div>
+            <div>
+                <h3 class="h3 footer--content-section__title">API</h3>
+                <div class="footer--content-section__address-wrapper">
+                    <a href="https://engine.paypear.io/docs/" target="_blank">Click to check API Documentation</a>
+                </div>
+            </div>
+        </section>
+        <section class="footer--content-form-section">
+            <h3 class="h3 footer--content-section__title footer--content-section__title-contact-us">Contact Us</h3>
+            <form class="footer--contact-form" id="contact-form">
+                <label for="fullName" class="footer--contact-form__label">
+                    <input id="fullName" name="fullName" type="text" placeholder="Your Full Name" class="input footer--contact-form__input" />
+                </label>
+                <label for="email">
+                    <input id="email" name="email" type="email" placeholder="Your Email" class="input footer--contact-form__input" />
+                </label>
+                <label for="message">
+                    <textarea id="message" name="message" placeholder="Message" class="input footer--contact-form__input" ></textarea>
+                </label>
+                <button type="submit" class="button">Send</button>
+            </form>
+        </section>
+    </div>
+    <div class="footer--copyright">
+        <span>Copyright ©</span>
+        <span><script>document.write(String(new Date().getFullYear()))</script></span>
+        <span>All rights reserved</span>
+    </div>
+</footer>
+</body>
+</html>
