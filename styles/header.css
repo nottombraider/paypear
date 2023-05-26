@@ -4,7 +4,7 @@
     top: 0;
     backdrop-filter: blur(0.25rem);
     z-index: 50;
-    background-color: rgba(222 244 169 / 0.55);
+    background-color: rgb(202 241 106 / 0.6);
     margin: 0 auto;
 }
 
@@ -105,7 +105,8 @@ ul.dropdown-content li a {
 }
 
 .nav-item-selected {
-    color: var(--green-700);
+    color: var(--green-800);
+    font-weight: 900;
 }
 
 /*lg*/
