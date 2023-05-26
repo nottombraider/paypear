@@ -1,9 +1,5 @@
 /*md*/
 @media (min-width: 768px) {
-    .nav-list {
-        max-width: 42rem;
-    }
-
     .footer {
         flex-direction: row;
     }
@@ -30,21 +26,11 @@
 
 /*lg*/
 @media (min-width: 1024px) {
-    .nav-header {
-        display: flex;
-        justify-content: center;
-    }
 
-    .nav-header nav {
-        width: 56rem;
-    }
 
-    .nav-list {
-        max-width: 56rem;
-    }
-
-    .footer--content, .footer--content-form-section {
-        max-width: 56rem;
+    .footer--content,
+    .footer--content-form-section {
+        width: 60rem;
     }
 
     .footer--content {
@@ -59,20 +45,10 @@
 
 /*xl*/
 @media (min-width: 1200px) {
-    .body {
-        background-image: url("../../assets/cardpay.avif");
-        background-attachment: fixed;
-        -webkit-background-size: cover;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position-y: -6rem;
-        background-position-x: 10rem;
-    }
 
-    .nav-list,
     .footer--content,
     .footer--content-form-section {
-        max-width: 72rem;
+       width: 70rem;
     }
 
 /*    ----------refactor---------        */

@@ -9,13 +9,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../styles/setUpStyles.css">
-        <link rel="stylesheet" href="../styles/typography.css">
         <link rel="stylesheet" href="../index.css">
         <link rel="stylesheet" href="../styles/ContactUs.styles.css">
         <link rel="stylesheet" href="../styles/MediaStyles/Common.css">
         <link rel="stylesheet" href="../styles/MediaStyles/ContactUs.css">
-        <link rel="stylesheet" href="../styles/utilsStyles.css">
+        <link rel="stylesheet" href="../styles/common.css">
         <script type="text/javascript" src="../index.js"></script>
         <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
@@ -23,22 +21,64 @@
         <title>PayPear</title>
     </head>
     <body id="topHome" class="section-bg-img1 body">
-        <header class="nav-header">
-            <nav>
+    <header class="nav-header">
+        <nav>
             <ul class="nav-list">
                 <li>
-                    <a href="../index.html">
+                    <a href="#topHome" class="nav-header--logo-wrapper">
                         <img src="../assets/logo.svg" alt="PayPear" class="nav-header--logo-img" title="PayPear logo" />
+                        <p class="nav-header--logo-text">PAYPEAR</p>
                     </a>
                 </li>
+                <li class="menu">
+                    <div class="dropdown">
+                        <button class="dropdown-button" title="menu" id="menu">
+                            <svg
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                viewBox="0 0 24 24"
+                                class="dropdown-button--icon"
+                            >
+                                <path d="M3 12h18M3 6h18M3 18h18" />
+                            </svg>
+                        </button>
+                        <ul class="dropdown-content" id="dropdown-content">
+                            <li>
+                                <a href="../index.html" title="Home">Home</a>
+                            </li>
+                            <li>
+                                <a href="Features.html" title="Features">Features</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Gateway">Gateway</a>
+                            </li>
+                            <li>
+                                <a href="ContactUs.html" title="Partner with us" class="nav-item-selected">Partner with us</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Developers">Developers</a>
+                            </li>
+                            <li>
+                                <a href="Login.html" title="Login">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
                 <li class="nav-list--item-wrapper">
+                    <a href="../index.html" title="Home">Home</a>
                     <a href="Features.html" title="Features">Features</a>
-                    <a href="ContactUs.html" title="Contact us" class="nav-item-selected">Contact Us</a>
-                    <a href="Login.html" title="Login">Login</a>
+                    <a href="Features.html" title="Gateway">Gateway</a>
+                    <a href="ContactUs.html" title="Partner with us" class="nav-item-selected">Partner with us</a>
+                    <a href="ContactUs.html" title="Developers">Developers</a>
+                    <a href="Login.html" title="Login">
+                        <div class="primary-button">Login</div>
+                    </a>
                 </li>
             </ul>
         </nav>
-        </header>
+    </header>
         <main class="main">
             <div id="toast"></div>
             <div class="main-wrapper">
