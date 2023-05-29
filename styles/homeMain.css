@@ -103,7 +103,8 @@
 
 /*INTEGRATION SECTION*/
 
-.integration-section {
+.integration-section,
+.analytic-section {
     height: max-content;
     background-color: var(--green-100);
     padding: 7rem 0;
@@ -153,18 +154,25 @@
     align-items: center;
 }
 
-.integration-start-button {
+.integration-start-button,
+.learn-more-button {
     width: max-content;
     margin-top: 2rem;
 }
 
 .integration-cards,
-.integration-cards-wrapper {
-    gap: 2rem
+.analytic-images-wrapper,
+.analytic-images-top,
+.analytic-images-bottom {
+    display: flex;
 }
 
-.integration-cards {
-    display: flex;
+.integration-cards,
+.integration-cards-wrapper,
+.analytic-images-wrapper,
+.analytic-images-top,
+.analytic-images-bottom {
+    gap: 2rem
 }
 
 .integration-cards-wrapper {
@@ -224,6 +232,10 @@
     padding-left: 3.5rem;
 }
 
+.integration-card-title span.integration-card-title--second {
+    padding-left: 5rem;
+}
+
 .integration-graph-bg-bottom {
     bottom: -0.25rem;
     left: -4rem;
@@ -236,6 +248,64 @@
     transform: rotate(180deg);
 }
 
+.analytic-section {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+}
+
+.analytic-section-wrapper {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    gap: 4rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    border-radius: 1rem;
+}
+
+.analytic-images-wrapper {
+    position: relative;
+    flex-direction: column;
+}
+
+.analytic-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.analytic-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.analytic-images-top,
+.analytic-images-bottom {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+}
+
+.analytic-images-top {
+    right: -0.5rem;
+    top: -5.25rem;
+}
+
+.analytic-images-bottom {
+    left: -0.5rem;
+    bottom: -5.25rem;
+}
+
+.analytic-success-rate-wrapper {
+    max-width: 19rem;
+    border-radius: 1.125rem;
+    overflow: hidden;
+}
+
+.analytic-success-rate-img {
+    width: 100%;
+    height: auto;
+}
 
 /*md*/
 @media (min-width: 768px) {

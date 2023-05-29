@@ -71,6 +71,10 @@
     border-color: var(--green-700);
 }
 
+.chevron-light:before {
+    border-color: var(--green-50);
+}
+
 .box-shadow-center {
     -webkit-box-shadow: 0 0 2.625rem -0.75rem rgba(111,122,84,1);
     -moz-box-shadow: 0 0 2.625rem -0.75rem rgba(111,122,84,1);
