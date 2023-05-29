@@ -45,6 +45,10 @@
     transform: rotate(45deg);
 }
 
+.self-top {
+    align-self: flex-start;
+}
+
 .check-icon {
     width: 1.5rem;
     height: 1.5rem;
@@ -96,16 +100,3 @@
     color: var(--green-700);
     border-radius: 0.5rem;
 }
-
-/*.tag {*/
-/*    width: max-content;*/
-/*    padding: 0.5rem 0.75rem;*/
-/*    border-radius: 1rem;*/
-/*    font-size: 0.75rem;*/
-/*    font-weight: 900;*/
-/*}*/
-
-/*.tag-primary {*/
-/*    background-color: var(--green-400);*/
-/*    color: var(--green-800);*/
-/*}*/
