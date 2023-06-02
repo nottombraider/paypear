@@ -4,7 +4,7 @@
     top: 0;
     backdrop-filter: blur(0.25rem);
     z-index: 50;
-    background-color: rgb(202 241 106 / 0.6);
+    background-color: rgb(195 234 101 / 50%);
     margin: 0 auto;
 }
 
