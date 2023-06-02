@@ -14,7 +14,9 @@
         <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
         <link rel="manifest" href="assets/favicon/site.webmanifest">
-        <title>PayPear</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <title>paypear</title>
     </head>
     <body id="topHome" class="body">
 		<header class="nav-header">
@@ -79,29 +81,31 @@
             <div id="toast"></div>
             <div class="main-wrapper">
                 <section class="introduction-section">
-                    <header class="introduction-header">
-                        <h1 class="h1">Experience payments at a whole <span>new level</span> of greatness</h1>
-                        <h5 class="sub-title">Let's unlock the potential of card processing together and elevate your business to new heights of success.</h5>
-                    </header>
-                    <main class="introduction-main">
-                        <div class="graph-bg graph-bg-top"></div>
-                        <div class="introduction-image-wrapper dashboard-img-wrapper box-shadow-center">
+                    <div class="introduction-section-wrapper">
+                        <header class="introduction-header">
+                            <h1 class="h1">Experience payments at a whole <span>new level</span> of greatness</h1>
+                            <h5 class="sub-title">Let's unlock the potential of card processing together and elevate your business to new heights of success.</h5>
+                        </header>
+                        <main class="introduction-main">
+                            <div class="graph-bg graph-bg-top"></div>
+                            <div class="introduction-image-wrapper dashboard-img-wrapper box-shadow-center">
                                 <img src="assets/dashboard.png" alt="Dashboard" class="introduction-img dashboard-img">
                             </div>
-                        <div class="introduction-image-wrapper chart-img-wrapper box-shadow-center">
+                            <div class="introduction-image-wrapper chart-img-wrapper box-shadow-center">
                                 <img src="assets/chart.png" alt="Chart" class="introduction-img chart-img">
                             </div>
-                        <div class="introduction-image-wrapper credit-card-wrapper box-shadow-center">
-                            <img src="assets/credit-card.svg" alt="Credit Card" class="introduction-img credit-card-img">
-                        </div>
-                        <div class="graph-bg graph-bg-bottom"></div>
-                    </main>
+                            <div class="introduction-image-wrapper credit-card-wrapper box-shadow-center">
+                                <img src="assets/credit-card.svg" alt="Credit Card" class="introduction-img credit-card-img">
+                            </div>
+                            <div class="graph-bg graph-bg-bottom"></div>
+                        </main>
+                    </div>
                 </section>
                 <section class="integration-section">
                     <div class="integration-section-wrapper">
                         <header class="integration-header">
-                            <h2 class="h2 integration-title">Easy and fast integration</h2>
-                            <h4 class="h6 integration-title">Experience the ease and speed of integration like never before with our payment solutions. </h4>
+                            <h2 class="h2 integration-title">Transform Your Payments and Streamline your Business</h2>
+                            <h4 class="h6 integration-title">Unlock the advantages of our solutions</h4>
                         </header>
                         <main class="integration-main">
                             <div class="integration-side">
@@ -115,7 +119,7 @@
                                             >
                                                 <path d="M16 19H8c-1.654 0-3-1.346-3-3V8c0-1.654 1.346-3 3-3h5a1 1 0 110 2H8c-.552 0-1 .449-1 1v8c0 .551.448 1 1 1h8c.552 0 1-.449 1-1v-3a1 1 0 112 0v3c0 1.654-1.346 3-3 3zm-2.834-4.167c-.35 0-.689-.139-.941-.391l-2.668-2.667a1.334 1.334 0 011.887-1.885l1.416 1.417 3.475-5.455a1.334 1.334 0 112.332 1.294l-4.334 7a1.332 1.332 0 01-.98.673l-.187.014z" />
                                             </svg>
-                                        <p>Easy and Fast Integration</p>
+                                        <p>Fast and Easy Integration</p>
                                     </li>
                                     <li class="integration-list--item">
                                         <svg
@@ -156,7 +160,7 @@
                                     <div class="integration-card box-shadow-center">
                                         <div class="integration-card-header">
                                             <h6 class="h6 integration-card-title">
-                                                <span>Easy and Fast</span>
+                                                <span>Fast and Easy</span>
                                                 <span class="integration-card-title--second">Integration</span>
                                             </h6>
                                             <div class="integration-icon-wrapper">
@@ -247,18 +251,18 @@
                     <div class="analytic-section-wrapper">
                         <div class="analytic-images-wrapper">
                             <div class="analytic-images-top">
-                                <div class="analytic-success-rate-wrapper">
+                                <div class="analytic-success-rate-wrapper box-shadow-center">
                                     <img src="assets/success-rate-chart.png" alt="Success Rate" class="analytic-success-rate-img">
                                 </div>
-                                <div class="analytic-success-rate-wrapper self-top">
+                                <div class="analytic-success-rate-wrapper box-shadow-center self-top">
                                     <img src="assets/online-payment.avif" alt="Online payment" class="analytic-success-rate-img">
                                 </div>
                             </div>
                             <div class="analytic-images-bottom">
-                                <div class="analytic-success-rate-wrapper">
+                                <div class="analytic-success-rate-wrapper box-shadow-center">
                                     <img src="assets/contactless-payment.avif" alt="Contactless payment" class="analytic-success-rate-img">
                                 </div>
-                                <div class="analytic-success-rate-wrapper">
+                                <div class="analytic-success-rate-wrapper box-shadow-center">
                                     <img src="assets/deposit-chart.png" alt="Deposits Chart" class="analytic-success-rate-img">
                                 </div>
                             </div>
@@ -277,7 +281,119 @@
                         </div>
                     </div>
                 </section>
+                <section class="security-section">
+                    <div class="security-section-wrapper">
+                        <header class="security-header">
+                            <h4 class="h4">Stay Protected with Our Trusted Solution</h4>
+                            <p class="sub-title">Secure your business and customers from potential financial losses and security breaches.</p>
+                        </header>
+                        <main class="security-main">
+<!--                            TODO: add navigation-->
+                            <a href="#" class="outlined-button">Learn more...</a>
+                        </main>
+                    </div>
+                </section>
+                <section class="cost-section">
+                    <div class="cost-section-wrapper">
+                        <header class="cost-section-header">
+                            <h4 class="h4 cost-section-header--title"><span>Trim Expenses,</span> <span>Maximize Savings</span></h4>
+                            <p class="sub-title">Experience substantial cost savings for your business with our outstanding payment solutions.</p>
+                            <p class="main-text">Bid farewell to unnecessary expenses associated with manual payment handling, paperwork, and administrative overheads. Our efficient and automated payment solutions eliminate inefficiencies, minimize errors, and significantly reduce operational expenses.</p>
+                        </header>
+                        <main class="cost-section-main">
+                            <div class="graph-bg cost-decoration-top"></div>
+                            <div class="cost-image-wrapper">
+                                <img src="assets/laptop-business.avif" alt="Laptop with dashboard" class="cost-img box-shadow-center">
+                            </div>
+                            <div class="graph-bg cost-decoration-bottom"></div>
+                        </main>
+                    </div>
+                </section>
+                <section class="payouts-section">
+                    <div class="payouts-section-wrapper">
+                        <header class="payouts-header">
+                            <h4 class="h4">Payouts</h4>
+                            <p class="sub-title">Get ready to elevate your payout experience and propel your business to new heights of success.</p>
+                            <p class="main-text">Our dynamic payout solution in payments industry is a game-changer that will revolutionize the way you handle payouts. </p>
+                        </header>
+                        <main class="payouts-main">
+<!--                            TODO: add navigation-->
+                            <a href="#" class="primary-button">Learn more...</a>
+                        </main>
+                    </div>
+                </section>
+                <section class="industries-section">
+                    <div class="industries-section-wrapper">
+                        <header class="industries-header">
+                            <h4 class="h4">We are facilitating secure and efficient in different industries</h4>
+                        </header>
+                        <main class="industries-main">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="swiper-card">
+                                            <h6 class="h6">Retail</h6>
+                                            <p class="secondary-text">Stores and e-commerce businesses utilize payment processors to accept various forms of payments, including credit cards, mobile payments, and online transactions.</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="swiper-card">
+                                            <h6 class="h6">Hospitality</h6>
+                                            <p class="secondary-text">Hotels, restaurants, and hospitality establishments rely on payment systems to process payments from guests for accommodation, dining, and other services.</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="swiper-card">
+                                            <h6 class="h6">E-commerce</h6>
+                                            <p class="secondary-text">Online businesses and marketplaces heavily rely on payment processors to handle secure transactions and facilitate seamless payment experiences for customers.</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="swiper-card">
+                                            <h6 class="h6">Financial Services</h6>
+                                            <p class="secondary-text">Banks, insurance companies, and other financial institutions use payment processors to facilitate payments, transfers, and transactions for their customers.</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="swiper-card">
+                                            <h6 class="h6">Healthcare</h6>
+                                            <p class="secondary-text">Healthcare providers, clinics, and hospitals utilize payment systems to process payments from patients, insurance companies, and government healthcare programs.</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="swiper-card">
+                                            <h6 class="h6">Travel and Tourism</h6>
+                                            <p class="secondary-text">Airlines, travel agencies, and tour operators utilize payment processors to handle ticket sales, bookings, and payments for travel-related services.</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="swiper-card">
+                                            <h6 class="h6">Education</h6>
+                                            <p class="secondary-text">Educational institutions, such as schools and universities, use payment systems to process tuition fees and other educational expenses.</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="swiper-card">
+                                            <h6 class="h6">Entertainment</h6>
+                                            <p class="secondary-text">Event venues, and streaming platforms rely on payment systems to handle ticket sales and subscriptions.</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="swiper-card">
+                                            <h6 class="h6">Transportation</h6>
+                                            <p class="secondary-text">Ride-sharing services, taxi companies, and public transportation systems utilize payment processors to process fares and payments from passengers.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </main>
+                    </div>
+                </section>
             </div>
         </main>
+    <script type="text/javascript" src="index.js"></script>
     </body>
 </html>
