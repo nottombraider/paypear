@@ -44,47 +44,4 @@ document.getElementById('contact-form').addEventListener('submit', (event) => {
                 }, 4000);
             }
         );
-} )
-
-
-
-// const startCarousel = () => {
-//     const slides = document.getElementsByClassName('carousel-item');
-//
-//     if(!slides.length) return null;
-//
-//     const addActive = (slide) => slide.classList.add('active');
-//     const removeActive = (slide) => slide.classList.remove('active');
-//
-//     addActive(slides[0]);
-//
-//     setInterval( () => {
-//         for (let index = 0; index < slides.length; index++) {
-//             if (index + 1 === slides.length) {
-//                 addActive(slides[0]);
-//
-//                 slides[0].style.zIndex = "10";
-//
-//                 setTimeout(removeActive, 200, slides[index]);
-//
-//                 break;
-//             }
-//
-//             if (slides[index].classList.contains('active')) {
-//                 slides[index].removeAttribute('style');
-//
-//                 setTimeout(removeActive, 350, slides[index]);
-//
-//                 addActive(slides[index + 1]);
-//
-//                 break;
-//             }
-//         }
-//     }, 7000);
-// }
-//
-// window.onload = () => {
-//     startCarousel();
-//
-//
-// }
+} );
