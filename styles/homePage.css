@@ -13,7 +13,8 @@
 .security-section-wrapper,
 .cost-section-wrapper,
 .payouts-section-wrapper,
-.world-section-wrapper {
+.world-section-wrapper,
+.sections-container {
     max-width: 1128px;
     margin: auto;
     display: flex;
@@ -580,9 +581,13 @@
 .sections-wrapper {
     background: linear-gradient(0deg, rgba(67,73,51,1) 0%, rgba(111,122,84,1) 100%);
     padding: 5rem 2.5rem;
+}
+
+.sections-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
 }
 
 /*partner contact*/
@@ -696,22 +701,3 @@
 
 }
 
-/*lg*/
-@media (min-width: 1024px) {
-
-}
-
-/*xl*/
-@media (min-width: 1200px) {
-
-}
-
-/*2xl*/
-@media (min-width: 1280px) {
-    
-}
-
-/*3xl*/
-@media (min-width: 1440px) {
-    
-}
