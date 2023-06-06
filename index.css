@@ -1,5 +1,5 @@
 @import "styles/header.css";
-@import "styles/homeMain.css";
+@import "styles/homePage.css";
 @import "styles/common.css";
 @import "styles/typography.css";
 
@@ -52,6 +52,10 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+button {
+    border: none;
 }
 
 .body {

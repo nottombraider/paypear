@@ -12,7 +12,8 @@
 .analytic-section-wrapper,
 .security-section-wrapper,
 .cost-section-wrapper,
-.payouts-section-wrapper {
+.payouts-section-wrapper,
+.world-section-wrapper {
     max-width: 1128px;
     margin: auto;
     display: flex;
@@ -52,15 +53,6 @@
     z-index: 1;
     border-radius: 0.75rem;
     line-height: 0;
-}
-
-.graph-bg {
-    position: absolute;
-    width: 20rem;
-    height: 22rem;
-    background-image: url(../assets/geometric_graph.svg);
-    background-repeat: no-repeat;
-    background-size: auto;
 }
 
 .graph-bg-top {
@@ -545,6 +537,159 @@
 .swiper-pagination span.swiper-pagination-bullet-active {
     background-color: var(--green-700);
 }
+
+/*world map section*/
+
+.world-section {
+    background: linear-gradient(0deg, rgba(111,122,84,1) 0%, rgba(155,171,118,1) 100%);
+    padding: 5rem 2.5rem;
+}
+
+.world-section-wrapper {
+    flex-direction: column;
+    padding: 0;
+}
+
+.world-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+.world-main {
+    display: flex;
+    background-color: var(--green-50);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.world-main-description {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 1rem;
+}
+
+.world-map {
+    max-width: 35rem;
+}
+
+/*sections wrapper*/
+
+.sections-wrapper {
+    background: linear-gradient(0deg, rgba(67,73,51,1) 0%, rgba(111,122,84,1) 100%);
+    padding: 5rem 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*partner contact*/
+
+.partner-section {
+    width: 100%;
+    padding: 3rem 2rem;
+}
+
+.partner-section-wrapper,
+.contacts-section {
+    max-width: 32.75rem;
+}
+
+.partner-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 2rem;
+    align-items: center;
+}
+
+.partner-contact-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+.partner-section-main {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.partner-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.partner-button {
+    align-self: center;
+}
+
+/*contact form section*/
+
+.contact-form-section {
+    position: relative;
+    width: 100%;
+}
+
+.contact-form-wrapper {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    background-color: var(--green-50);
+    border-radius: 1rem;
+}
+
+.contact-form-header {
+    text-align: center;
+}
+
+.contact-form-main {
+    padding: 0 2rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 7rem;
+}
+
+.primary-button.contact-form-submit-button {
+    margin-top: 0.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.graph-bg-light.contact-form-decor {
+    width: 14rem;
+    height: 14rem;
+}
+
+.contact-form-decor-top {
+    top: -3.75rem;
+    right: -2.75rem;
+    transform: rotate(268deg);
+}
+
+.contact-form-decor-bottom {
+    bottom: -3rem;
+    left: -3rem;
+    transform: rotate(180deg);
+}
+
 
 /*md*/
 @media (min-width: 768px) {
