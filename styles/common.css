@@ -55,6 +55,20 @@
     fill: var(--green-600);
 }
 
+.graph-bg,
+.graph-bg-light {
+    position: absolute;
+    width: 20rem;
+    height: 22rem;
+    background-image: url(../assets/geometric_graph.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.graph-bg-light {
+    background-image: url("../assets/geometric-graph-light.svg");
+}
+
 .chevron::before {
     content: '';
     position: relative;
@@ -85,7 +99,8 @@
     box-shadow: 0 0 2.625rem -0.75rem rgba(111,122,84,1);
 }
 
-.primary-button {
+.primary-button,
+.primary-button-light {
     padding: 0.65rem 1.5rem;
     text-align: center;
     background-color: var(--green-700);
@@ -99,4 +114,23 @@
     border: 1px solid var(--green-700);
     color: var(--green-700);
     border-radius: 0.5rem;
+}
+
+.primary-button-light {
+    background-color: var(--green-100);
+    color: var(--green-800);
+}
+
+.input, .textarea {
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    border: 1px solid var(--light-gray-400);
+    font-size: 1rem;
+}
+
+.label--text {
+    font-weight: 300;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
 }
