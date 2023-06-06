@@ -15,7 +15,7 @@
 .payouts-section-wrapper,
 .world-section-wrapper,
 .sections-container {
-    max-width: 1128px;
+    max-width: 70.5rem;
     margin: auto;
     display: flex;
     align-items: center;
@@ -695,6 +695,7 @@
     transform: rotate(180deg);
 }
 
+/*TODO: add responsiveness phone & tablet */
 
 /*md*/
 @media (min-width: 768px) {
