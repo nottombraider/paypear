@@ -7,7 +7,7 @@
 }
 
 .h2 {
-    font-size: 2.175rem;
+    font-size: 2.25rem;
     line-height: 2.75rem;
     color: var(--green-900);
     font-weight: 700;
@@ -63,4 +63,52 @@
 
 .text-green-100 {
     color: var(--green-100)
+}
+
+
+@media (min-width: 320px) and (max-width: 539px) {
+    .h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .h2 {
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    }
+
+    .h3 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .h4 {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
+    .h5 {
+        font-size: 1.125rem;
+        line-height: 1.65rem;
+    }
+
+    .h6 {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .sub-title {
+        font-size: 0.95rem;
+        line-height: 1.45rem;
+    }
+
+    .main-text {
+        font-size: 0.85rem;
+        line-height: 1.25rem;
+    }
+
+    .secondary-text {
+        font-size: 0.75rem;
+        line-height: 1rem;
+    }
 }
