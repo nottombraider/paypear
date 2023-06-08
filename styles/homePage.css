@@ -75,7 +75,7 @@
 
 .chart-img-wrapper {
     bottom: 1.75rem;
-    right: 0;
+    right: -1.5rem;
     line-height: 0;
 }
 
@@ -94,7 +94,7 @@
 }
 
 .dashboard-img {
-    max-width: 30rem;
+    max-width: 35rem;
 }
 
 .chart-img {
@@ -137,7 +137,7 @@
 .integration-main {
     display: flex;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .integration-side {
@@ -145,7 +145,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 1.5rem;
-    max-width: 23rem;
+    max-width: 22rem;
     padding-left: 3rem;
 }
 
@@ -167,20 +167,13 @@
     margin-top: 2rem;
 }
 
-.integration-cards,
-.analytic-images-wrapper,
-.analytic-images-top,
-.analytic-images-bottom {
-    display: flex;
-    line-height: 0;
+.integration-cards-swiper-wrapper {
+    display: none;
 }
 
-.integration-cards,
-.integration-cards-wrapper,
-.analytic-images-wrapper,
-.analytic-images-top,
-.analytic-images-bottom {
-    gap: 2rem
+.integration-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .integration-cards-wrapper {
@@ -189,16 +182,20 @@
     flex-direction: column;
 }
 
+.integration-cards,
+.integration-cards-wrapper {
+    gap: 1.5rem;
+}
+
 .integration-cards-wrapper-right {
     padding-top: 5rem;
 }
 
 .integration-card {
     max-width: 20rem;
-    height: 23rem;
+    height: 20rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     gap: 1.5rem;
     padding: 2rem 1.5rem;
     border-radius: 0.75rem;
@@ -208,41 +205,33 @@
 
 .integration-card-header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column-reverse;
 }
 
 .integration-icon-wrapper {
     position: relative;
+    align-self: flex-end;
     display: flex;
     line-height: 0;
 }
 
 .integration-icon {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     fill: var(--green-600);
     color: var(--green-600);
 }
 
 .easy-integration-icon-connect {
     position: absolute;
-    right: 2.5rem;
-    bottom: 3.25rem;
+    right: 2rem;
+    bottom: 0.5rem;
     transform: rotate(35deg);
 }
 
 .integration-card-title {
     display: flex;
     flex-direction: column;
-    padding-top: 2rem;
-}
-
-.integration-card-title span:nth-child(2) {
-    padding-left: 3.5rem;
-}
-
-.integration-card-title span.integration-card-title--second {
-    padding-left: 5rem;
 }
 
 .integration-graph-bg-bottom {
@@ -297,6 +286,19 @@
     gap: 2rem;
 }
 
+.analytic-images-wrapper,
+.analytic-images-top,
+.analytic-images-bottom {
+    display: flex;
+    line-height: 0;
+}
+
+.analytic-images-wrapper,
+.analytic-images-top,
+.analytic-images-bottom {
+    gap: 2rem
+}
+
 .analytic-images-top,
 .analytic-images-bottom {
     position: absolute;
@@ -316,6 +318,7 @@
 }
 
 .analytic-success-rate-wrapper {
+    min-width: 14.5rem;
     max-width: 19rem;
     line-height: 0;
     border-radius: 1.125rem;
@@ -393,7 +396,7 @@
 }
 
 .cost-decoration-bottom {
-    bottom: -15rem;
+    bottom: -11rem;
     left: -2.5rem;
     transform: rotate(180deg);
 }
@@ -403,7 +406,12 @@
     z-index: 1;
     padding: 2rem;
     line-height: 0;
-    bottom: -12rem;
+    bottom: -8rem;
+    left: 50%;
+    width: 100%;
+    max-width: 27rem;
+    margin: auto;
+    transform: translateX(-50%);
 }
 
 .cost-img {
@@ -469,7 +477,7 @@
 }
 
 .swiper-slide {
-    padding: 2rem 2.5rem;
+    padding: 2rem;
     background: var(--green-50);
     border-radius: 1rem;
     text-align: center;
@@ -493,7 +501,7 @@
 .swiper-card-icon {
     position: absolute;
     top: -1rem;
-    right: -1rem;
+    right: -0.75rem;
     width: 1.75rem;
     height: 1.75rem;
 }
@@ -574,6 +582,7 @@
 
 .world-map {
     max-width: 35rem;
+    margin: auto;
 }
 
 /*sections wrapper*/
@@ -697,8 +706,494 @@
 
 /*TODO: add responsiveness phone & tablet */
 
-/*md*/
-@media (min-width: 768px) {
+/*mobile*/
+@media (min-width: 320px) and (max-width: 539px) {
+    .introduction-section-wrapper,
+    .integration-section-wrapper {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 
+    .introduction-section-wrapper {
+        flex-direction: column;
+        gap: 0;
+        justify-content: space-evenly;
+    }
+
+    .introduction-header {
+        width: 100%;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .introduction-main {
+        width: 100%;
+        padding: 0;
+        min-height: 16rem;
+    }
+
+    .graph-bg.graph-bg-top,
+    .graph-bg.graph-bg-bottom {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .graph-bg-top {
+        top: -1rem;
+    }
+
+    .credit-card-wrapper {
+        bottom: 6rem;
+        left: -0.75rem;
+    }
+
+    .chart-img-wrapper {
+        right: -0.75rem;
+    }
+
+    .credit-card-img,
+    .chart-img {
+        width: 8rem;
+    }
+
+    .graph-bg-bottom {
+        bottom: -1rem;
+    }
+
+    .integration-section-wrapper {
+        gap: 2rem;
+    }
+
+    .integration-title {
+        padding: 1rem;
+    }
+
+    .integration-main {
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .integration-side {
+        padding: 0;
+    }
+
+    .outlined-button {
+        width: 100%;
+    }
+
+    .integration-cards-wrapper {
+        display: none;
+    }
+
+    .integration-cards-swiper-wrapper {
+        display: initial;
+        position: relative;
+    }
+
+    .integration-card-swiper-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        height: 13rem;
+    }
+
+    .integration-card-header-swiper {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .graph-bg.graph-bg-swiper-top,
+    .graph-bg.graph-bg-swiper-bottom {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .graph-bg-swiper-top {
+        top: -1rem;
+        left: -1.25rem;
+    }
+
+    .graph-bg-swiper-bottom {
+        bottom: -1rem;
+        right: -1.25rem;
+    }
+
+    .analytic-section-wrapper {
+        padding: 0 1.5rem;
+        display: block;
+    }
+
+    .analytic-images-wrapper {
+        display: none;
+    }
+
+    .analytic-content-wrapper {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .learn-more-button {
+        align-self: flex-end;
+    }
+
+    .security-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .security-section-wrapper {
+        flex-direction: column;
+    }
+
+    .cost-section,
+    .payouts-section,
+    .industries-section,
+    .world-section,
+    .sections-wrapper {
+        padding: 1rem 1.5rem;
+    }
+
+    .cost-section-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+
+    .cost-section-header {
+        text-align: center;
+    }
+
+    .cost-section-main {
+        display: none;
+    }
+
+    .payouts-section-wrapper {
+        flex-direction: column;
+    }
+
+    .payouts-header {
+        max-width: 100%;
+    }
+
+    .industries-section-wrapper {
+        padding-top: 3rem;
+        gap: 3rem;
+    }
+
+    .industries-header {
+        padding: 0;
+    }
+
+    .world-section-wrapper {
+        padding-top: 3rem;
+    }
+
+    .world-main {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    .sections-container {
+        flex-direction: column-reverse;
+    }
+
+    .partner-section {
+        padding: 3rem 0;
+        text-align: center;
+    }
+}
+
+/*tablet all*/
+@media (min-width: 540px) and (max-width: 900px) {
+    .introduction-section-wrapper {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .introduction-header {
+        width: 100%;
+        margin-top: 2rem;
+        padding: 0;
+    }
+
+    .introduction-main {
+        width: 100%;
+    }
+
+    .credit-card-img {
+        max-width: 14rem;
+    }
+
+    .chart-img-wrapper {
+        width: 100%;
+        max-width: 18rem;
+    }
+
+    .chart-img {
+        max-width: 18rem;
+    }
+
+    .dashboard-img-wrapper {
+        width: 100%;
+        max-width: 35rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .graph-bg.graph-bg-top,
+    .graph-bg.graph-bg-bottom,
+    .graph-bg.integration-graph-bg-top,
+    .graph-bg.integration-graph-bg-bottom {
+        width: 17rem;
+        height: 17rem;
+    }
+
+    .graph-bg-top {
+        left: -2rem;
+    }
+
+    .integration-section {
+        padding-top: 5rem;
+    }
+
+    .integration-section-wrapper {
+        padding: 0;
+        gap: 4rem;
+    }
+
+    .integration-header {
+        padding: 0 1rem;
+    }
+
+    .integration-title {
+        padding: 2rem 0 0;
+    }
+
+    .integration-main {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .integration-side {
+        width: 100%;
+        max-width: unset;
+        padding: 0 2.5rem;
+    }
+
+    .integration-start-button {
+        align-self: center;
+    }
+
+    .integration-cards {
+        width: max-content;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 18rem 18rem;
+        padding: 0 1.25rem;
+    }
+
+    .integration-cards,
+    .integration-cards-wrapper {
+        gap: 2rem;
+    }
+
+    .integration-card {
+        max-width: unset;
+        padding: 1.5rem 1rem;
+        justify-content: space-evenly;
+    }
+
+    .integration-card p {
+        text-align: center;
+    }
+
+    .integration-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .integration-card-header {
+        flex-direction: column-reverse;
+        gap: 0.5rem;
+    }
+
+    .integration-card-title {
+        padding-top: 0;
+    }
+
+    .integration-icon-wrapper {
+        justify-content: flex-end;
+    }
+
+    .easy-integration-icon-connect {
+        right: 1.75rem;
+        bottom: 0.25rem;
+    }
+
+    .integration-graph-bg-top {
+        top: 1rem;
+        right: -2.5rem;
+    }
+
+    .integration-graph-bg-bottom {
+        bottom: 0.25rem;
+        left: -2.5rem;
+    }
+
+    .analytic-section-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+        padding: 5rem 2.5rem;
+    }
+
+    .analytic-content-wrapper {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .learn-more-button {
+        align-self: flex-end;
+    }
+
+    .analytic-images-wrapper {
+        display: none;
+    }
+
+    .security-section {
+        padding: 3rem 2rem;
+    }
+
+    .security-section-wrapper {
+        flex-direction: column;
+    }
+
+    .cost-section {
+        padding-bottom: 0;
+    }
+
+    .cost-section-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .cost-section-header--title {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .cost-section-main {
+        width: 100%;
+        height: 15rem;
+    }
+
+    .cost-image-wrapper {
+        bottom: 0;
+        width: 100%;
+        padding: 0;
+        max-width: 23rem;
+    }
+
+    .graph-bg.cost-decoration-top,
+    .graph-bg.cost-decoration-bottom {
+        width: 13rem;
+        height: 13rem;
+    }
+
+    .cost-decoration-top {
+        top: -2rem;
+        right: 0;
+    }
+
+    .cost-decoration-bottom {
+        bottom: -2.5rem;
+        left: -0.5rem;
+    }
+
+    .payouts-section {
+        padding: 2rem;
+    }
+
+    .payouts-section-wrapper {
+        flex-direction: column;
+    }
+
+    .payouts-header {
+        max-width: 100%;
+    }
+
+    .industries-section {
+        padding-bottom: 2rem;
+    }
+
+    .industries-section-wrapper {
+        gap: 3rem;
+    }
+
+    .industries-header {
+        padding: 0 2rem;
+    }
+
+    .world-main {
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+    .sections-wrapper {
+        padding-top: 3rem;
+    }
+
+    .sections-container {
+        flex-direction: column-reverse;
+    }
+
+    .partner-section-wrapper {
+        max-width: unset;
+    }
+}
+
+/*tablet sm*/
+@media (min-width: 540px) and (max-width: 700px) {
+    .credit-card-wrapper {
+        left: -1rem;
+        bottom: 12rem;
+    }
+
+    .credit-card-img {
+        max-width: 10rem;
+    }
+
+    .chart-img-wrapper {
+        right: -0.5rem;
+        bottom: 0;
+    }
+
+    .graph-bg-top {
+        left: -1.75rem;
+        top: 1rem;
+    }
+
+    .graph-bg-bottom {
+        right: -2.5rem;
+        bottom: -2.5rem;
+    }
+
+    .dashboard-img-wrapper {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .integration-cards {
+        grid-template-columns: 15rem 15rem;
+    }
+
+    .integration-cards,
+    .integration-cards-wrapper {
+        gap: 1.25rem;
+    }
 }
 
