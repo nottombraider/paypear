@@ -59,7 +59,7 @@
 .graph-bg-light {
     position: absolute;
     width: 20rem;
-    height: 22rem;
+    height: 20rem;
     background-image: url(../assets/geometric_graph.svg);
     background-repeat: no-repeat;
     background-size: auto;
@@ -133,4 +133,16 @@
     font-weight: 300;
     font-size: 0.75rem;
     line-height: 1.25rem;
+}
+
+.icon-fill-green-600 {
+    fill: var(--green-600);
+}
+
+.icon-fill-green-800 {
+    fill: var(--green-800);
+}
+
+.icon-color-green-600 {
+    color: var(--green-600);
 }

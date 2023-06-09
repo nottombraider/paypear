@@ -1092,8 +1092,8 @@
     }
 
     .cost-image-wrapper {
-        bottom: 0;
         width: 100%;
+        bottom: 0;
         padding: 0;
         max-width: 23rem;
     }

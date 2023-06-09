@@ -9,16 +9,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../styles/setUpStyles.css">
-        <link rel="stylesheet" href="../styles/typography.css">
         <link rel="stylesheet" href="../index.css">
-        <link rel="stylesheet" href="../styles/MediaStyles/Common.css">
-        <link rel="stylesheet" href="../styles/common.css">
-        <script type="text/javascript" src="../index.js"></script>
+        <link rel="stylesheet" href="../styles/features.css">
         <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
         <link rel="manifest" href="../assets/favicon/site.webmanifest">
-        <title>PayPear</title>
+        <title>paypear</title>
     </head>
     <body id="topHome" class="body section-bg-img1">
         <header class="nav-header">
@@ -27,7 +23,7 @@
                     <li>
                         <a href="#topHome" class="nav-header--logo-wrapper">
                             <img src="../assets/logo.svg" alt="PayPear" class="nav-header--logo-img" title="PayPear logo" />
-                            <p class="nav-header--logo-text">PAYPEAR</p>
+                            <p class="nav-header--logo-text">paypear</p>
                         </a>
                     </li>
                     <li class="menu">
@@ -46,31 +42,31 @@
                             </button>
                             <ul class="dropdown-content" id="dropdown-content">
                                 <li>
-                                    <a href="../index.html" title="Home">Home</a>
+                                    <a href="../index.html" class="nav-item-selected">Home</a>
                                 </li>
                                 <li>
-                                    <a href="Features.html" title="Features" class="nav-item-selected">Features</a>
+                                    <a href="#topHome">Features</a>
                                 </li>
                                 <li>
-                                    <a href="#" title="Gateway">Gateway</a>
+                                    <a href="#">Gateway</a>
                                 </li>
                                 <li>
-                                    <a href="ContactUs.html" title="Partner with us">Partner with us</a>
+                                    <a href="ContactUs.html">Partner with us</a>
                                 </li>
                                 <li>
-                                    <a href="#" title="Developers">Developers</a>
+                                    <a href="#">Developers</a>
                                 </li>
                                 <li>
-                                    <a href="Login.html" title="Login">Login</a>
+                                    <a href="Login.html">Login</a>
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li class="nav-list--item-wrapper">
                         <a href="../index.html" title="Home">Home</a>
-                        <a href="Features.html" title="Features" class="nav-item-selected">Features</a>
-                        <a href="Features.html" title="Gateway">Gateway</a>
-                        <a href="ContactUs.html" title="Contact us">Partner with us</a>
+                        <a href="#topHome" title="Features" class="nav-item-selected">Features</a>
+                        <a href="Features.html" title="Features">Gateway</a>
+                        <a href="#" title="Contact us">Partner with us</a>
                         <a href="ContactUs.html" title="Contact us">Developers</a>
                         <a href="Login.html" title="Login">
                             <div class="primary-button">Login</div>
@@ -81,47 +77,102 @@
         </header>
         <main class="main">
             <div id="toast"></div>
-        </main>
-        <footer class="footer">
-            <a href="#topHome" class="footer--chevron-link chevron" title="Back to top"></a>
-            <div class="footer--content">
-                <section  class="footer--content-section">
-                    <div>
-                        <h3 class="h3 footer--content-section__title">About Us</h3>
-                        <div class="footer--content-section__address-wrapper">
-                            <span>Paypear Co. LTD </span>
-                            <span>No.34 CP Tower 3, Building A,</span>
-                            <span>Bangkok Metropolis, Thailand</span>
-                        </div>
+            <div class="main-wrapper">
+                <div class="page-title">
+                    <div class="page-title-wrapper">
+                        <h2 class="h2">Unleash the Potential</h2>
+                        <h6 class="h6">Discover the Key Features of Our Payment Solution</h6>
                     </div>
-                    <div>
-                        <h3 class="h3 footer--content-section__title">API</h3>
-                        <div class="footer--content-section__address-wrapper">
-                            <a href="https://engine.paypear.io/docs/" target="_blank">Click to check API Documentation</a>
+                </div>
+                <section class="analytic-section" id="analytic">
+
+                    <div class="analytic-section-wrapper">
+                        <div class="graph-bg analytic-graph-top"></div>
+                        <div class="analytic-content-wrapper">
+                            <header class="analytic-header">
+                                <svg
+                                        class="title-icon icon-color-green-600"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        viewBox="0 0 24 24"
+                                >
+                                    <path stroke="none" d="M0 0h24v24H0z" />
+                                    <path d="M4 4 H20 A1 1 0 0 1 21 5 V15 A1 1 0 0 1 20 16 H4 A1 1 0 0 1 3 15 V5 A1 1 0 0 1 4 4 z" />
+                                    <path d="M7 20h10M9 16v4M15 16v4M9 12V8M12 12v-1M15 12v-2M12 12v-1" />
+                                </svg>
+                                <h2 class="h2">Powerful Analytics</h2>
+                            </header>
+                            <main class="analytic-main">
+                                <p class="sub-title">Unlock the power of data with our robust and powerful analytics tools. </p>
+                                <p class="main-text">In today's data-driven world, understanding your business performance is essential for making informed decisions and driving growth. Our advanced analytics solutions provide you with valuable insights and actionable intelligence, empowering you to gain a deeper understanding of your customers, transactions, and overall business trends.</p>
+                                <p class="main-text">Visualize key metrics, track performance, and identify areas for improvement with intuitive dashboards and comprehensive reporting. From transaction patterns and customer behavior to revenue streams and fraud detection, our analytics tools enable you to make data-backed decisions that propel your business forward. </p>
+                                <p class="main-text">Stay ahead of the competition by leveraging our powerful analytics capabilities, enabling you to optimize operations, identify new opportunities, and deliver an exceptional customer experience. Harness the true potential of your data and unleash the power of insights with our game-changing analytics tools. Your business success starts here.</p>
+                            </main>
                         </div>
+                        <div class="graph-bg analytic-graph-bottom"></div>
                     </div>
+
+
                 </section>
-                <section class="footer--content-form-section">
-                    <h3 class="h3 footer--content-section__title footer--content-section__title-contact-us">Contact Us</h3>
-                    <form class="footer--contact-form" id="contact-form">
-                        <label for="fullName" class="footer--contact-form__label">
-                            <input id="fullName" name="fullName" type="text" placeholder="Your Full Name" class="input footer--contact-form__input" />
-                        </label>
-                        <label for="email">
-                            <input id="email" name="email" type="email" placeholder="Your Email" class="input footer--contact-form__input" />
-                        </label>
-                        <label for="message">
-                            <textarea id="message" name="message" placeholder="Message" class="input footer--contact-form__input" ></textarea>
-                        </label>
-                        <button type="submit" class="button">Send</button>
-                    </form>
+                <section class="settlements-section">
+                    <div class="settlements-section-wrapper">
+                        <header class="settlements-header">
+                            <img src="" alt="">
+                        </header>
+                        <main class="settlements-main">
+                            <div class="settlements-title">
+                                <h2 class="h2">Unlock Operational Excellence</h2>
+                                <svg
+                                  viewBox="0 0 1024 1024"
+                                  class="title-icon icon-fill-green-800"
+                                >
+                                    <path d="M676 565c-50.8 0-92 41.2-92 92s41.2 92 92 92 92-41.2 92-92-41.2-92-92-92zm0 126c-18.8 0-34-15.2-34-34s15.2-34 34-34 34 15.2 34 34-15.2 34-34 34zm204-523H668c0-30.9-25.1-56-56-56h-80c-30.9 0-56 25.1-56 56H264c-17.7 0-32 14.3-32 32v200h-88c-17.7 0-32 14.3-32 32v448c0 17.7 14.3 32 32 32h336c17.7 0 32-14.3 32-32v-16h368c17.7 0 32-14.3 32-32V200c0-17.7-14.3-32-32-32zm-412 64h72v-56h64v56h72v48H468v-48zm-20 616H176V616h272v232zm0-296H176v-88h272v88zm392 240H512V432c0-17.7-14.3-32-32-32H304V240h100v104h336V240h100v552zM704 408v96c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8v-96c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8zM592 512h48c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8z" />
+                                </svg>
+                            </div>
+                            <p class="h6">Reconciliation Features and Efficient Settlement at Your Fingertips</p>
+                        </main>
+                    </div>
                 </section>
             </div>
-            <div class="footer--copyright">
-                <span>Copyright ©</span>
-                <span><script>document.write(String(new Date().getFullYear()))</script></span>
-                <span>All rights reserved</span>
+        </main>
+        <footer id="footer" class="footer">
+            <div class="footer-wrapper">
+                <a href="#topHome" class="footer--chevron-link chevron" title="Back to top"></a>
+                <div class="footer-info-wrapper">
+                    <div class="footer-get-started">
+                        <h5 class="h5 text-light footer-title">Begin your journey</h5>
+                        <a href="ContactUs.html" class="primary-button-light">Start now</a>
+                    </div>
+                    <div class="footer-api">
+                        <h5 class="h5 text-light footer-title">Developers</h5>
+                        <a href="https://engine.paypear.io/docs/" target="_blank" class="main-text text-light">Click to check API Documentation</a>
+                    </div>
+                </div>
+                <div class="footer-address">
+                    <h5 class="h5 text-light footer-title">About Us</h5>
+                    <p class="footer-address-content">
+                        <span class="main-text text-light">Paypear Co. LTD </span>
+                        <span class="main-text text-light">No.34 CP Tower 3, Building A,</span>
+                        <span class="main-text text-light">Bangkok Metropolis, Thailand</span>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-footer">
+                <div class="footer-terms-policy">
+                    <!--                    TODO: link to Privacy & Terms-->
+                    <a href="#" class="secondary-text text-light">Privacy Policy</a>
+                    <a href="#" class="secondary-text text-light">Terms and conditions</a>
+                </div>
+                <div class="footer-copyright text-light">
+                    <span>Copyright ©</span>
+                    <span><script>document.write(String(new Date().getFullYear()))</script></span>
+                    <span>All rights reserved</span>
+                </div>
             </div>
         </footer>
+        <script type="text/javascript" src="../index.js"></script>
     </body>
 </html>

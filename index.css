@@ -1,7 +1,7 @@
-@import "styles/header.css";
-@import "styles/homePage.css";
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 @import "styles/common.css";
 @import "styles/typography.css";
+@import "styles/header.css";
 @import 'styles/footer.css';
 
 * {

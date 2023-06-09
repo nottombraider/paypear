@@ -1,0 +1,86 @@
+.title-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.page-title-wrapper,
+.analytic-section-wrapper,
+.settlements-section-wrapper {
+    max-width: 70.5rem;
+    margin: auto;
+}
+
+.page-title {
+    background-color: var(--green-400);
+    padding-right: 3rem;
+}
+
+.page-title-wrapper {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.analytic-section {
+    position: relative;
+    background-color: var(--green-400);
+    min-height: 95vh;
+    padding: 4rem;
+}
+
+.analytic-graph-top,
+.analytic-graph-bottom {
+    z-index: 0;
+}
+
+.analytic-section-wrapper {
+    position: relative;
+}
+
+.analytic-content-wrapper {
+    position: relative;
+    z-index: 1;
+    background-color: var(--green-50);
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+}
+
+.analytic-graph-top {
+    left: -4rem;
+    top: -4rem;
+    transform: rotate(180deg);
+}
+
+.analytic-graph-bottom {
+    right: -4rem;
+    bottom: -4rem;
+}
+
+.analytic-header,
+.settlements-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.analytic-main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 3rem 0 0;
+}
+
+.settlements-section {
+    background: linear-gradient(0deg, rgba(200,220,152,1) 0%, rgba(222,244,169,1) 100%);
+    padding: 2rem 4rem 4rem;
+}
+
+.settlements-section-wrapper {
+
+}
+
+.settlements-title {
+
+}
