@@ -7,7 +7,8 @@
 .analytic-section-wrapper,
 .settlements-section-wrapper,
 .services-section-wrapper,
-.compliance-section-wrapper {
+.compliance-section-wrapper,
+.payouts-section-wrapper {
     max-width: 70.5rem;
     margin: auto;
 }
@@ -169,7 +170,8 @@
     padding: 4rem;
 }
 
-.compliance-section-wrapper {
+.compliance-section-wrapper,
+.payouts-section-wrapper {
     display: flex;
     justify-content: space-evenly;
     gap: 4.5rem;
@@ -182,7 +184,7 @@
     gap: 1rem;
     padding: 2rem;
     border-radius: 1rem;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.45);
 }
 
 .compliance-main {
@@ -259,4 +261,31 @@
 .compliance-people {
     right: -2%;
     top: -120%;
+}
+
+.payouts-section {
+    background-color: var(--green-700);
+    padding: 4rem;
+}
+
+.payouts-section-wrapper {
+    justify-content: space-between;
+}
+
+.payouts-header {
+    padding: 4rem 0;
+}
+
+.payouts-main {
+    background-color: rgba(255, 255, 255, 0.45);
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.payouts-icon {
+    width: 20rem;
+    height: auto;
 }
