@@ -6,7 +6,8 @@
 .page-title-wrapper,
 .analytic-section-wrapper,
 .settlements-section-wrapper,
-.services-section-wrapper {
+.services-section-wrapper,
+.compliance-section-wrapper {
     max-width: 70.5rem;
     margin: auto;
 }
@@ -37,6 +38,7 @@
 
 .analytic-section-wrapper {
     position: relative;
+    border-radius: 1rem;
 }
 
 .analytic-content-wrapper {
@@ -91,10 +93,6 @@
     align-items: center;
 }
 
-.settlements-title {
-    justify-content: flex-end;
-}
-
 .settlements-main {
     display: flex;
     flex-direction: column;
@@ -102,7 +100,9 @@
 }
 
 .settlements-img {
+    min-width: 15rem;
     max-width: 20rem;
+    width: 100%;
     height: auto;
 }
 
@@ -164,3 +164,99 @@
     right: -1rem;
 }
 
+.compliance-section {
+    background: linear-gradient(0deg, rgba(111,122,84,1) 0%, rgba(155,171,118,1) 42%);
+    padding: 4rem;
+}
+
+.compliance-section-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4.5rem;
+}
+
+.compliance-header {
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.compliance-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    width: 28rem;
+    padding-right: 3rem;
+}
+
+.compliance-main-title {
+    padding: 3rem 2rem;
+}
+
+.compliance-icons-wrapper {
+    position: relative;
+    min-height: 3rem;
+    width: 100%;
+}
+
+.compliance-icon {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+}
+
+.compliance-doc-sign {
+    bottom: -90%;
+    left: -5%;
+}
+
+.compliance-docs-folder-icon {
+    bottom: -2%;
+    left: 25%;
+}
+
+.compliance-checklist {
+    bottom: -75%;
+    left: 55%;
+}
+
+.compliance-warning {
+    bottom: -50%;
+    right: 0;
+}
+
+.compliance-law {
+    right: -15%;
+    bottom: -175%;
+}
+
+.compliance-settings {
+    top: -150%;
+    left: 0;
+}
+
+.compliance-doc {
+    top: -25%;
+    left: 23%;
+}
+
+.compliance-glass {
+    top: -100%;
+    left: 48%;
+}
+
+.compliance-checked {
+    bottom: 30%;
+    right: 17%;
+}
+
+.compliance-people {
+    right: -2%;
+    top: -120%;
+}
