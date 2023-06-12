@@ -8,7 +8,8 @@
 .settlements-section-wrapper,
 .services-section-wrapper,
 .compliance-section-wrapper,
-.payouts-section-wrapper {
+.payouts-section-wrapper,
+.stay-secure-section-wrapper {
     max-width: 70.5rem;
     margin: auto;
 }
@@ -184,7 +185,7 @@
     gap: 1rem;
     padding: 2rem;
     border-radius: 1rem;
-    background-color: rgba(255, 255, 255, 0.45);
+    background-color: rgba(255, 255, 255, 0.75);
 }
 
 .compliance-main {
@@ -277,7 +278,7 @@
 }
 
 .payouts-main {
-    background-color: rgba(255, 255, 255, 0.45);
+    background-color: rgba(255, 255, 255, 0.75);
     border-radius: 1rem;
     padding: 2rem;
     display: flex;
@@ -288,4 +289,81 @@
 .payouts-icon {
     width: 20rem;
     height: auto;
+}
+
+.stay-secure-section {
+    background: linear-gradient(0deg, rgba(67,73,51,1) 0%, rgba(111,122,84,1) 100%);
+    padding: 4rem;
+}
+
+.stay-secure-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.stay-secure-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.stay-secure-main {
+    position: relative;
+}
+
+.stay-secure-decoration {
+    width: 13rem;
+    height: 13rem;
+}
+
+.stay-secure-decoration-top {
+    top: -2rem;
+    left: -2rem;
+}
+
+.stay-secure-decoration-bottom {
+    bottom: -2rem;
+    right: -2rem;
+}
+
+.stay-secure-swiper-card {
+    position: relative;
+    background-color: var(--green-50);
+    padding: 3.5rem 2rem 3rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 20rem;
+}
+
+.stay-secure-swiper-icon {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    fill: var(--green-800);
+    top: 1.5rem;
+    right: 2rem;
+}
+
+.swiper [class^="swiper-button-"]::after {
+    color: var(--green-700);
+    font-size: 1.5rem;
+}
+
+.swiper [class^="swiper-button-prev"] {
+    left: 0;
+}
+.swiper [class^="swiper-button-next"] {
+    right: 0;
+}
+
+.swiper [class^="swiper-slide"] {
+    height: auto;
+}
+
+.swiper-pagination span.swiper-pagination-bullet-active {
+    background-color: var(--green-700);
 }

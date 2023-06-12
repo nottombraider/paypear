@@ -45,6 +45,33 @@ new Swiper("#industries-swiper", {
     }
 });
 
+new Swiper("#stay-secure-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 24,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        650: {
+            slidesPerView: 2,
+            spaceBetween: 16
+        },
+        850: {
+            slidesPerView: 2,
+            spaceBetween:24
+        }
+    }
+});
+
 document.getElementById('contact-form').addEventListener('submit', (event) => {
     event.preventDefault();
 
