@@ -41,6 +41,10 @@
     to {top: 0; opacity: 0;}
 }
 
+.cursor-unset {
+    cursor: unset;
+}
+
 .rotate-45 {
     transform: rotate(45deg);
 }
