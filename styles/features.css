@@ -5,7 +5,8 @@
 
 .page-title-wrapper,
 .analytic-section-wrapper,
-.settlements-section-wrapper {
+.settlements-section-wrapper,
+.services-section-wrapper {
     max-width: 70.5rem;
     margin: auto;
 }
@@ -26,7 +27,6 @@
 .analytic-section {
     position: relative;
     background-color: var(--green-400);
-    min-height: 95vh;
     padding: 4rem;
 }
 
@@ -78,9 +78,89 @@
 }
 
 .settlements-section-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4rem;
+    padding-left: 2rem;
+}
 
+.settlements-header {
+    margin-left: 2.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .settlements-title {
-
+    justify-content: flex-end;
 }
+
+.settlements-main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.settlements-img {
+    max-width: 20rem;
+    height: auto;
+}
+
+.services-section {
+    background: linear-gradient(0deg, rgba(155,171,118,1) 0%, rgba(200,220,152,1) 100%);
+    padding: 4rem;
+}
+
+.services-header {
+    text-align: center;
+}
+
+.services-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 3rem;
+}
+
+.services-main,
+.services-cards-wrapper {
+    gap: 1rem;
+}
+
+.services-cards-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.services-cards-wrapper.services-cards-row {
+    flex-direction: row;
+}
+
+.services-card-img-wrapper {
+    position: relative;
+}
+
+.services-card {
+    padding: 2rem 1rem;
+    background-color: var(--green-50);
+    border-radius: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-card-img {
+    max-width: 8rem;
+    height: auto;
+}
+
+.services-card-credit-card-img {
+    position: absolute;
+    width: 5rem;
+    height: auto;
+    bottom: 2rem;
+    right: -1rem;
+}
+
