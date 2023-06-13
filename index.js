@@ -62,10 +62,10 @@ new Swiper("#stay-secure-swiper", {
             slidesPerView: 1,
         },
         650: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 16
         },
-        850: {
+        950: {
             slidesPerView: 2,
             spaceBetween:24
         }

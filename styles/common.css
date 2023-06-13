@@ -45,12 +45,24 @@
     cursor: unset;
 }
 
+.flex {
+    display: flex;
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
 .rotate-45 {
     transform: rotate(45deg);
 }
 
 .self-top {
     align-self: flex-start;
+}
+
+.self-end {
+    align-self: flex-end;
 }
 
 .check-icon {
