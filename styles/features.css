@@ -1,6 +1,6 @@
 .title-icon {
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 .page-title-wrapper,
@@ -48,7 +48,7 @@
     z-index: 1;
     background-color: var(--green-50);
     border-radius: 1rem;
-    padding: 2.5rem 2rem;
+    padding: 2rem 1.5rem;
 }
 
 .analytic-graph-top {
@@ -69,11 +69,36 @@
     gap: 1rem;
 }
 
+.analytic-header {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.analytic-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .analytic-main {
     display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    padding: 3rem 0 0;
+    gap: 1.25rem;
+    padding-top: 2rem;
+}
+
+.analytic-card {
+    position: relative;
+    background-color: rgba(111, 122, 84, 0.85);
+    border-radius: 1rem;
+    padding: 3.25rem 1.25rem 1.25rem;
+}
+
+.analytic-card-icon {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    top: 0.5rem;
+    right: 0.5rem;
 }
 
 .settlements-section {
