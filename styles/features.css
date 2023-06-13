@@ -189,6 +189,7 @@
 }
 
 .services-card {
+    position: relative;
     padding: 2rem 1.5rem;
     background-color: var(--green-50);
     border-radius: 1rem;
@@ -198,6 +199,36 @@
     gap: 1rem;
     justify-content: space-between;
     align-items: center;
+}
+
+.services-subscription-icon {
+    width: 3rem;
+    height: auto;
+    position: absolute;
+    top: -1.5rem;
+    left: 0.5rem;
+    transform: rotate(-25deg);
+}
+
+.services-settlement-icon {
+    width: 3rem;
+    height: auto;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.second-services-cards-wrapper {
+    text-align: right;
+}
+
+.second-services-cards-wrapper .services-card {
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.second-services-cards-wrapper .services-card .h6 {
+    padding-left: 4rem;
 }
 
 .services-payout-card {
