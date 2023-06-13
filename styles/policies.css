@@ -30,20 +30,24 @@
     gap: 1rem;
 }
 
-.cookies-list {
+.sub-list {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     padding-left: 1.75rem;
 }
 
-.cookies-list-item {
+ul.sub-list-with-bullets li {
+    list-style: lower-alpha;
+}
+
+.sub-list-item {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
 }
 
-.cookies-list-item .sub-title {
+.sub-list-item .sub-title {
     font-size: 1.25rem;
     line-height: 1.75rem;
     font-weight: 500;
