@@ -53,3 +53,10 @@
     text-decoration: underline;
     color: var(--green-800);
 }
+
+
+@media (min-width: 320px) and (max-width: 760px) {
+    .policy-main {
+        padding: 4rem 2rem;
+    }
+}
