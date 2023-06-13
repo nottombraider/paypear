@@ -4,7 +4,7 @@
     padding: 5rem 2.5rem 1rem;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1.5rem;
 }
 
 .footer-wrapper {
@@ -13,7 +13,7 @@
     max-width: 70.5rem;
     margin: auto;
     display: flex;
-    gap: 5rem;
+    gap: 3rem;
     justify-content: space-between;
     align-items: flex-start;
 }
@@ -60,6 +60,16 @@
     gap: 0;
 }
 
+.footer-icons-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-pci-logo {
+    width: 15rem;
+    height: auto;
+}
+
 .footer-footer {
     width: 100%;
     max-width: 70.5rem;
@@ -73,11 +83,19 @@
 .footer-terms-policy {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer-terms-policy-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .footer-copyright {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 0.5rem;
     font-weight: 200;
     font-size: 0.75rem;
