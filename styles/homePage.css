@@ -704,8 +704,6 @@
     transform: rotate(180deg);
 }
 
-/*TODO: add responsiveness phone & tablet */
-
 /*mobile*/
 @media (min-width: 320px) and (max-width: 539px) {
     .introduction-section-wrapper,
