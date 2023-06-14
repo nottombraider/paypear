@@ -1,7 +1,7 @@
 #toast {
     visibility: hidden;
     min-width: 16rem;
-    background-color: var(--green-900);
+    background-color: var(--green-800);
     color: var(--green-50);
     text-align: center;
     border-radius: 0.5rem;
@@ -124,6 +124,13 @@
     border-radius: 0.5rem;
 }
 
+.primary-button:hover {
+    background-color: var(--green-800);
+    -webkit-box-shadow: 0 14px 25px -14px rgba(67,73,51,1);
+    -moz-box-shadow: 0 14px 25px -14px rgba(67,73,51,1);
+    box-shadow: 0 14px 25px -14px rgba(67,73,51,1);
+}
+
 .outlined-button {
     padding: 0.65rem 1.5rem;
     text-align: center;
@@ -132,9 +139,19 @@
     border-radius: 0.5rem;
 }
 
+.outlined-button:hover {
+    border: 1px solid var(--green-800);
+    color: var(--green-800);
+}
+
 .primary-button-light {
     background-color: var(--green-100);
     color: var(--green-800);
+}
+
+.primary-button-light:hover {
+    background-color: var(--green-300);
+    color: var(--green-900);
 }
 
 .input, .textarea {

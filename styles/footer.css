@@ -31,7 +31,11 @@
     border-radius: 100%;
     padding: 0.67rem 1rem;
     z-index: 10;
-    background-color: rgba(255 255 255 / 0.5);
+    background-color: rgba(255 255 255 / 0.45);
+}
+
+.footer--chevron-link:hover {
+    background-color: rgba(255 255 255 / 0.75);
 }
 
 .footer-title {
