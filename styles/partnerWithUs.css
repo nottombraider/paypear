@@ -13,12 +13,31 @@
 }
 
 .sections-wrapper {
+    position: relative;
     display: grid;
     grid-template-columns: 3fr 2fr;
     gap: 4rem;
 }
 
+.graph-bg.graph-top,
+.graph-bg.graph-bottom {
+    width: 15rem;
+    height: 15rem;
+}
+
+.graph-top {
+    top: -2.5rem;
+    right: -2.5rem;
+}
+
+.graph-bottom {
+    bottom: -1rem;
+    left: -2.5rem;
+    transform: rotate(90deg);
+}
+
 .content-section {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -90,6 +109,7 @@
 
 
 .contact-form-section {
+    position: relative;
     background-color: var(--green-50);
     padding: 2.5rem 1.5rem;
     border-radius: 1rem;
@@ -97,6 +117,7 @@
     flex-direction: column;
     gap: 2rem;
     text-align: right;
+    z-index: 1;
 }
 
 .contact-form-section--form {
@@ -113,4 +134,79 @@
 .contact-form-section--form__textarea {
     resize: none;
     height: 7rem;
+}
+
+
+@media (min-width: 320px) and (max-width: 540px) {
+    .main-wrapper {
+        padding: 3rem 1rem;
+    }
+
+    .sections-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-section {
+        gap: 1.5rem;
+    }
+
+    .content-header {
+        margin-left: 0;
+    }
+
+    .content-main {
+        width: 18rem;
+        margin: auto;
+    }
+
+    .graph-bg.graph-top,
+    .graph-bg.graph-bottom {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .graph-top {
+        top: 7rem;
+        right: -1.5rem;
+    }
+
+    .graph-bottom {
+        bottom: -2rem;
+        left: -1.5rem;
+    }
+
+    .contact-form-section {
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 541px) and (max-width: 950px) {
+    .sections-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .graph-bg.graph-top,
+    .graph-bg.graph-bottom {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .graph-top {
+        top: 5rem;
+    }
+
+    .graph-bottom {
+        bottom: -2rem;
+    }
+
+    .content-main {
+        width: 100%;
+    }
+
+    .contact-form-section {
+        text-align: center;
+    }
 }

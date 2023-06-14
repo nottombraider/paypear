@@ -65,6 +65,9 @@
 }
 
 .footer-icons-wrapper {
+    max-width: 70.5rem;
+    width: 100%;
+    margin: auto;
     display: flex;
     justify-content: flex-end;
 }
