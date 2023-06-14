@@ -68,3 +68,21 @@ new Swiper("#stay-secure-swiper", {
     }
 });
 
+new Swiper("#partner-content-swiper", {
+    spaceBetween: 16,
+    loop: true,
+    centeredSlides: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
