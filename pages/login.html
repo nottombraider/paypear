@@ -11,33 +11,71 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../styles/typography.css">
         <link rel="stylesheet" href="../index.css">
-        <link rel="stylesheet" href="../styles/Login.styles.css">
-        <link rel="stylesheet" href="../styles/MediaStyles/Common.css">
-        <link rel="stylesheet" href="../styles/MediaStyles/Login.css">
         <link rel="stylesheet" href="../styles/common.css">
-        <script type="text/javascript" src="../index.js"></script>
         <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
         <link rel="manifest" href="../assets/favicon/site.webmanifest">
-        <title>PayPear</title>
+        <title>Login - paypear</title>
     </head>
     <body id="topHome" class="body section-bg-img1">
         <header class="nav-header">
-            <nav>
+        <nav>
             <ul class="nav-list">
                 <li>
-                    <a href="../index.html">
+                    <a href="../index.html" class="nav-header--logo-wrapper">
                         <img src="../assets/logo.svg" alt="PayPear" class="nav-header--logo-img" title="PayPear logo" />
+                        <p class="nav-header--logo-text">paypear</p>
                     </a>
                 </li>
+                <li class="menu">
+                    <div class="dropdown">
+                        <button class="dropdown-button" title="menu" id="menu">
+                            <svg
+                                    fill="none"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    viewBox="0 0 24 24"
+                                    class="dropdown-button--icon"
+                            >
+                                <path d="M3 12h18M3 6h18M3 18h18" />
+                            </svg>
+                        </button>
+                        <ul class="dropdown-content" id="dropdown-content">
+                            <li>
+                                <a href="../index.html" title="Home">Home</a>
+                            </li>
+                            <li>
+                                <a href="features.html" title="Features">Features</a>
+                            </li>
+                            <li>
+                                <a href="gateway.html" title="Gateway">Gateway</a>
+                            </li>
+                            <li>
+                                <a href="contact-us.html" title="Partner with Us">Partner with Us</a>
+                            </li>
+                            <li>
+                                <a href="developers.html" title="Developers">Developers</a>
+                            </li>
+                            <li>
+                                <a href="#topHome" title="Login" class="nav-item-selected">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
                 <li class="nav-list--item-wrapper">
-                    <a href="Features.html" title="Features">Features</a>
-                    <a href="ContactUs.html" title="Contact us">Contact Us</a>
-                    <a href="Login.html" title="Login" class="nav-item-selected">Login</a>
+                    <a href="../index.html" title="Home">Home</a>
+                    <a href="features.html" title="Features">Features</a>
+                    <a href="gateway.html" title="Gateway">Gateway</a>
+                    <a href="contact-us.html" title="Partner with Us">Partner with us</a>
+                    <a href="developers.html" title="Developers">Developers</a>
+                    <a href="#topHome" title="Login" class="nav-item-selected">
+                        <div class="primary-button">Login</div>
+                    </a>
                 </li>
             </ul>
         </nav>
-        </header>
+    </header>
         <main class="main">
             <div id="toast"></div>
             <div class="main-wrapper">
@@ -96,5 +134,6 @@
                 <span>All rights reserved</span>
             </div>
         </footer>
+        <script type="text/javascript" src="../utils/swiper.js"></script>
     </body>
 </html>
