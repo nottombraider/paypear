@@ -86,3 +86,8 @@ new Swiper("#partner-content-swiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+new Swiper("#expertise-swiper", {
+    effect: "cards",
+    grabCursor: true,
+});
