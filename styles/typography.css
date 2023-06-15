@@ -1,38 +1,48 @@
 .h1 {
     display: block;
-    color: #252117;
+    color: var(--green-900);
     font-size: 2.5rem;
     line-height: 3rem;
-    letter-spacing: 0.25rem;
-    text-transform: uppercase;
     font-weight: 700;
 }
 
 .h2 {
-    font-size: 2.8125rem;
-    line-height: 3rem;
-    color: #252117;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    color: var(--green-900);
     font-weight: 700;
 }
 
 .h3 {
-    font-size: 2.175rem;
-    color: #252117;
-    line-height: 3rem;
+    font-size: 2rem;
+    color: var(--green-900);
+    line-height: 2.5rem;
     font-weight: 700;
 }
 
 .h4 {
-    font-weight: 300;
-    font-size: 1.9rem;
-    line-height: 3rem;
-    color: #252117;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    color: var(--green-900);
 }
 
 .h5 {
-    font-size: 1.75rem;
-    line-height: 2.25rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: var(--green-900);
+}
+
+.h6 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: var(--green-900);
+}
+
+.sub-title {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
     font-weight: 300;
+    color: var(--green-800);
 }
 
 .main-text {
@@ -41,23 +51,64 @@
     font-weight: 300;
 }
 
-.button {
-    text-transform: uppercase;
-    border: 1px solid;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    background-color: #252117 !important;
-    color: white;
-}
-
-.input, .textarea {
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    border: 1px solid #d9d9d9;
-}
-
-.label--text {
+.secondary-text {
+    font-size: 0.85rem;
+    line-height: 1rem;
     font-weight: 300;
-    font-size: 0.75rem;
-    line-height: 1.25rem;
+}
+
+.text-light {
+    color: #fff;
+}
+
+.text-green-100 {
+    color: var(--green-100)
+}
+
+
+@media (min-width: 320px) and (max-width: 539px) {
+    .h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .h2 {
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    }
+
+    .h3 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .h4 {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
+    .h5 {
+        font-size: 1.125rem;
+        line-height: 1.65rem;
+    }
+
+    .h6 {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .sub-title {
+        font-size: 0.95rem;
+        line-height: 1.45rem;
+    }
+
+    .main-text {
+        font-size: 0.85rem;
+        line-height: 1.25rem;
+    }
+
+    .secondary-text {
+        font-size: 0.75rem;
+        line-height: 1rem;
+    }
 }

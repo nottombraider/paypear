@@ -1,0 +1,729 @@
+.title-icon {
+    width: 4rem;
+    height: 4rem;
+}
+
+.page-title-wrapper,
+.analytic-section-wrapper,
+.settlements-section-wrapper,
+.services-section-wrapper,
+.compliance-section-wrapper,
+.payouts-section-wrapper,
+.stay-secure-section-wrapper {
+    max-width: 70.5rem;
+    margin: auto;
+}
+
+.page-title {
+    background-color: var(--green-400);
+    padding-right: 3rem;
+}
+
+.page-title-wrapper {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.analytic-section {
+    position: relative;
+    background-color: var(--green-400);
+    padding: 4rem;
+}
+
+.analytic-graph-top,
+.analytic-graph-bottom {
+    z-index: 0;
+}
+
+.analytic-section-wrapper {
+    position: relative;
+    border-radius: 1rem;
+}
+
+.analytic-content-wrapper {
+    position: relative;
+    z-index: 1;
+    background-color: var(--green-50);
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+}
+
+.analytic-graph-top {
+    left: -4rem;
+    top: -4rem;
+    transform: rotate(180deg);
+}
+
+.analytic-graph-bottom {
+    right: -4rem;
+    bottom: -4rem;
+}
+
+.analytic-header,
+.settlements-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.analytic-header {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.analytic-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.analytic-main {
+    display: flex;
+    gap: 1.25rem;
+    padding-top: 2rem;
+}
+
+.analytic-card {
+    position: relative;
+    background-color: rgba(111, 122, 84, 0.85);
+    border-radius: 1rem;
+    padding: 3.25rem 1.25rem 1.25rem;
+}
+
+.analytic-card-icon {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+.settlements-section {
+    background: linear-gradient(0deg, rgba(200,220,152,1) 0%, rgba(222,244,169,1) 100%);
+    padding: 4rem;
+    min-height: 40rem;
+    height: 100%;
+}
+
+.settlements-section-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100%;
+}
+
+.settlements-header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.settlements-main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.settlements-cards-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2rem;
+}
+
+.settlements-card-rounded {
+    padding: 2rem;
+    background-image: url("../assets/bg-circle-green-50.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 21rem;
+    height: 21rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.settlements-card-icon {
+    width: 3rem;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.settlements-card-absolute {
+    position: absolute;
+    right: -6%;
+    bottom: -25%;
+}
+
+.services-section {
+    background: linear-gradient(0deg, rgba(155,171,118,1) 0%, rgba(200,220,152,1) 100%);
+    padding: 4rem;
+}
+
+.services-header {
+    text-align: center;
+}
+
+.services-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 3rem;
+}
+
+.services-main,
+.services-cards-wrapper {
+    gap: 1rem;
+}
+
+.services-cards-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.services-cards-wrapper.services-cards-row {
+    flex-direction: row;
+}
+
+.services-card {
+    position: relative;
+    padding: 2rem 1.5rem;
+    background-color: var(--green-50);
+    border-radius: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-subscription-icon {
+    width: 3rem;
+    height: auto;
+    position: absolute;
+    top: -1.5rem;
+    left: 0.5rem;
+    transform: rotate(-25deg);
+}
+
+.services-settlement-icon {
+    width: 3rem;
+    height: auto;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.second-services-cards-wrapper {
+    text-align: right;
+}
+
+.second-services-cards-wrapper .services-card {
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.second-services-cards-wrapper .services-card .h6 {
+    padding-left: 4rem;
+}
+
+.services-payout-card {
+    background-color: var(--green-800);
+    padding-left: 0;
+    flex-direction: row;
+}
+
+.services-payout-icons-wrapper {
+    min-width: 25%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.services-payouts-icon-wrapper {
+    background-color: var(--green-50);
+    border-radius: 100%;
+    padding: 1rem;
+    position: absolute;
+}
+
+.services-payouts-icon-wrapper-1 {
+    top: -2.5rem;
+    left: 7rem;
+}
+
+.services-payouts-icon-wrapper-2 {
+    top: -1rem;
+    left: -2rem;
+}
+
+.services-payouts-icon-wrapper-3 {
+    bottom: -2.5rem;
+    left: 3rem;
+}
+
+.services-payouts-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.services-payout-header {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.services-icons-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.services-card-icon {
+    width: 5rem;
+    height: auto;
+}
+
+.services-card-icon-sm {
+    width: 4rem;
+    height: auto;
+}
+
+.services-card-credit-card-img {
+    position: absolute;
+    width: 5rem;
+    height: auto;
+    bottom: 2rem;
+    right: -1rem;
+}
+
+.compliance-section {
+    background: linear-gradient(0deg, rgba(111,122,84,1) 0%, rgba(155,171,118,1) 42%);
+    padding: 4rem;
+}
+
+.compliance-section-wrapper,
+.payouts-section-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4.5rem;
+}
+
+.compliance-header {
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.compliance-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    width: 28rem;
+    padding-right: 3rem;
+}
+
+.compliance-main-title {
+    padding: 3rem 2rem;
+}
+
+.compliance-icons-wrapper {
+    position: relative;
+    min-height: 3rem;
+    width: 100%;
+}
+
+.compliance-icon {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+}
+
+.compliance-doc-sign {
+    bottom: -90%;
+    left: -5%;
+}
+
+.compliance-docs-folder-icon {
+    bottom: -2%;
+    left: 25%;
+}
+
+.compliance-checklist {
+    bottom: -75%;
+    left: 55%;
+}
+
+.compliance-warning {
+    bottom: -50%;
+    right: 0;
+}
+
+.compliance-law {
+    right: -15%;
+    bottom: -175%;
+}
+
+.compliance-settings {
+    top: -150%;
+    left: 0;
+}
+
+.compliance-doc {
+    top: -25%;
+    left: 23%;
+}
+
+.compliance-glass {
+    top: -100%;
+    left: 48%;
+}
+
+.compliance-checked {
+    bottom: 30%;
+    right: 17%;
+}
+
+.compliance-people {
+    right: -2%;
+    top: -120%;
+}
+
+.payouts-section {
+    background-color: var(--green-700);
+    padding: 4rem;
+}
+
+.payouts-section-wrapper {
+    justify-content: space-between;
+}
+
+.payouts-header {
+    padding: 4rem 0;
+}
+
+.payouts-main {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.payouts-icon {
+    width: 20rem;
+    height: auto;
+}
+
+.stay-secure-section {
+    background: linear-gradient(0deg, rgba(67,73,51,1) 0%, rgba(111,122,84,1) 100%);
+    padding: 4rem;
+}
+
+.stay-secure-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.stay-secure-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.stay-secure-main {
+    position: relative;
+}
+
+.stay-secure-decoration {
+    width: 13rem;
+    height: 13rem;
+}
+
+.stay-secure-decoration-top {
+    top: -2rem;
+    left: -2rem;
+}
+
+.stay-secure-decoration-bottom {
+    bottom: -2rem;
+    right: -2rem;
+}
+
+.stay-secure-swiper-card {
+    position: relative;
+    background-color: var(--green-50);
+    padding: 3.5rem 2rem 3rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 20rem;
+}
+
+.stay-secure-swiper-icon {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    fill: var(--green-800);
+    top: 1.5rem;
+    right: 2rem;
+}
+
+.swiper [class^="swiper-button-"]::after {
+    color: var(--green-700);
+    font-size: 1.5rem;
+}
+
+.swiper [class^="swiper-button-prev"] {
+    left: 0;
+}
+.swiper [class^="swiper-button-next"] {
+    right: 0;
+}
+
+.swiper [class^="swiper-slide"] {
+    height: auto;
+}
+
+.swiper-pagination span.swiper-pagination-bullet-active {
+    background-color: var(--green-700);
+}
+
+@media (min-width: 320px) and (max-width: 759px) {
+    .page-title {
+        padding-right: 0;
+    }
+
+    .page-title-wrapper {
+        padding: 2rem 1.5rem 1.5rem;
+    }
+
+    .analytic-section,
+    .settlements-section,
+    .services-section,
+    .compliance-section,
+    .payouts-section,
+    .stay-secure-section {
+        padding: 3rem 1rem;
+    }
+
+    .graph-bg.analytic-graph-top,
+    .graph-bg.analytic-graph-bottom {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .analytic-graph-top {
+        top: -2rem;
+        left: -1.75rem;
+    }
+
+    .analytic-graph-bottom {
+        bottom: -2rem;
+        right: -1.75rem;
+    }
+
+    .analytic-content-wrapper {
+        padding: 2rem 1rem;
+    }
+
+    .analytic-main {
+        flex-direction: column;
+    }
+
+    .settlements-section-wrapper {
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+
+    .settlements-cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+
+    .settlements-card-absolute {
+        position: static;
+    }
+
+    .settlements-card-rounded {
+        width: 17rem;
+        height: 17rem;
+    }
+
+    .settlements-card-rounded p.main-text {
+        font-size: 0.7rem;
+        line-height: 1rem;
+    }
+
+    .services-cards-wrapper.services-cards-row {
+        flex-direction: column;
+    }
+
+    .services-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services-payout-icons-wrapper {
+        min-width: 10%;
+    }
+
+    .services-payouts-icon-wrapper {
+        padding: 0.75rem;
+    }
+
+    .services-payouts-icon-wrapper-1 {
+        top: -6.25rem;
+        left: 4rem;
+    }
+
+    .services-payouts-icon-wrapper-2 {
+        top: -4rem;
+        left: -0.75rem;
+    }
+
+    .services-payouts-icon-wrapper-3 {
+        bottom: -6.25rem;
+        left: 1.25rem;
+    }
+
+    .services-payouts-icon {
+        width: 1.75rem;
+        height: 1.75rem;
+    }
+
+    .compliance-section-wrapper {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    .compliance-main {
+        width: 16rem;
+        padding-right: 0;
+        margin: auto;
+    }
+
+    .compliance-settings {
+        top: -100%;
+        left: -5%;
+    }
+
+    .compliance-people {
+        right: -4%;
+        top: -110%;
+    }
+
+    .payouts-section-wrapper {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .payouts-header {
+        position: relative;
+        padding: 1rem;
+    }
+
+    .payouts-icon {
+        position: absolute;
+        width: 8rem;
+        height: 8rem;
+        top: -2.5rem;
+        right: 0.25rem;
+    }
+
+    .stay-secure-swiper-card {
+        height: 23rem;
+    }
+}
+
+@media (min-width: 760px) and (max-width: 1100px) {
+    .analytic-main {
+        flex-direction: column;
+    }
+
+    .settlements-section-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .settlements-card-absolute {
+        right: 0;
+        bottom: -4rem;
+    }
+
+    .services-section {
+        padding-bottom: 2rem;
+    }
+
+    .services-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second-services-cards-wrapper {
+        flex-direction: row;
+    }
+
+    .services-main, .services-cards-wrapper {
+        gap: 1.5rem;
+    }
+
+    .services-payouts-icon-wrapper-1 {
+        top: -5.75rem;
+    }
+
+    .services-payouts-icon-wrapper-2 {
+        top: -4rem;
+    }
+
+    .services-payouts-icon-wrapper-3 {
+        bottom: -5.75rem;
+    }
+
+    .compliance-section-wrapper {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    .compliance-header {
+        max-width: 100%;
+    }
+
+    .compliance-main {
+        margin: auto;
+        padding-right: 1rem;
+    }
+
+    .payouts-section-wrapper {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .payouts-header {
+        position: relative;
+    }
+
+    .payouts-icon {
+        position: absolute;
+        width: 15rem;
+        height: 15rem;
+        top: -3rem;
+        right: 1rem;
+    }
+}

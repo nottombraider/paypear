@@ -1,0 +1,171 @@
+#toast {
+    visibility: hidden;
+    min-width: 16rem;
+    background-color: var(--green-800);
+    color: var(--green-50);
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+#toast.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 5rem; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 5rem; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {top: 5rem; opacity: 1;}
+    to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {top: 5rem; opacity: 1;}
+    to {top: 0; opacity: 0;}
+}
+
+.flex {
+    display: flex;
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
+.self-top {
+    align-self: flex-start;
+}
+
+.check-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: var(--green-600);
+}
+
+.graph-bg,
+.graph-bg-light {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    background-image: url(../assets/geometric_graph.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.graph-bg-light {
+    background-image: url("../assets/geometric-graph-light.svg");
+}
+
+.chevron::before {
+    content: '';
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    border-style: solid;
+    border-width: 0.125rem 0.125rem 0 0;
+    width: 0.35rem;
+    height: 0.35rem;
+    top: -0.05rem;
+    left: 0.025rem;
+    border-color: var(--green-900);
+    transform: rotate(-45deg);
+}
+
+.chevron-right:before {
+    transform: rotate(45deg);
+    border-color: var(--green-700);
+}
+
+.chevron-light:before {
+    border-color: var(--green-50);
+}
+
+.box-shadow-center {
+    -webkit-box-shadow: 0 0 2.625rem -0.75rem rgba(111,122,84,1);
+    -moz-box-shadow: 0 0 2.625rem -0.75rem rgba(111,122,84,1);
+    box-shadow: 0 0 2.625rem -0.75rem rgba(111,122,84,1);
+}
+
+.primary-button,
+.primary-button-light {
+    display: block;
+    padding: 0.65rem 1.5rem;
+    text-align: center;
+    background-color: var(--green-700);
+    color: var(--green-50);
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.primary-button:hover {
+    background-color: var(--green-800);
+    -webkit-box-shadow: 0 14px 25px -14px rgba(67,73,51,1);
+    -moz-box-shadow: 0 14px 25px -14px rgba(67,73,51,1);
+    box-shadow: 0 14px 25px -14px rgba(67,73,51,1);
+}
+
+.outlined-button {
+    padding: 0.65rem 1.5rem;
+    text-align: center;
+    border: 1px solid var(--green-700);
+    color: var(--green-700);
+    border-radius: 0.5rem;
+}
+
+.outlined-button:hover {
+    border: 1px solid var(--green-800);
+    color: var(--green-800);
+}
+
+.primary-button-light {
+    background-color: var(--green-100);
+    color: var(--green-800);
+}
+
+.primary-button-light:hover {
+    background-color: var(--green-300);
+    color: var(--green-900);
+}
+
+.input, .textarea {
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    border: 1px solid var(--light-gray-400);
+    font-size: 1rem;
+}
+
+.label--text {
+    font-weight: 300;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+}
+
+.icon-fill-green-600 {
+    fill: var(--green-600);
+}
+
+.icon-fill-green-800 {
+    fill: var(--green-800);
+}
+
+.icon-color-green-600 {
+    color: var(--green-600);
+}
