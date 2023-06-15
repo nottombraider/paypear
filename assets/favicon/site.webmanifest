@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "paypear",
+    "short_name": "paypear",
     "icons": [
        {
           "src": "/android-chrome-192x192.png",
