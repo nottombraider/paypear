@@ -1,6 +1,5 @@
 .developers {
-    max-width: 70.5rem;
-    margin: auto;
+
     padding: 4rem;
     min-height: 65vh;
     display: flex;
@@ -8,11 +7,14 @@
     justify-content: center;
     align-items: center;
     gap: 4rem;
+    background-color: var(--green-400);
 }
 
 .developers-content {
     display: flex;
     gap: 2rem;
+    max-width: 70.5rem;
+    margin: auto;
 }
 
 .developers-text-wrapper {
@@ -20,6 +22,10 @@
     flex-direction: column;
     align-items: self-start;
     gap: 2rem;
+}
+
+.developers-text-wrapper .primary-button {
+    max-width: 20rem;
 }
 
 .developers-title {

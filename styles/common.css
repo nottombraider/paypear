@@ -41,10 +41,6 @@
     to {top: 0; opacity: 0;}
 }
 
-.cursor-unset {
-    cursor: unset;
-}
-
 .flex {
     display: flex;
 }
@@ -53,16 +49,8 @@
     gap: 1rem;
 }
 
-.rotate-45 {
-    transform: rotate(45deg);
-}
-
 .self-top {
     align-self: flex-start;
-}
-
-.self-end {
-    align-self: flex-end;
 }
 
 .check-icon {
@@ -122,6 +110,7 @@
     background-color: var(--green-700);
     color: var(--green-50);
     border-radius: 0.5rem;
+    width: 100%;
 }
 
 .primary-button:hover {
