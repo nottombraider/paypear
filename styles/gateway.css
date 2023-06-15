@@ -1,0 +1,229 @@
+.general-section {
+    background-color: var(--green-400);
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-wrapper {
+    max-width: 70.5rem;
+    margin: auto;
+    padding: 4rem;
+}
+
+.general-section-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.general-main,
+.general-content-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.general-content-wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: flex-start;
+    padding: 2.75rem 0;
+}
+
+.general-icon {
+    max-width: 20rem;
+    width: 100%;
+    height: auto;
+}
+
+.integration-section {
+    background: linear-gradient(0deg, rgba(200,220,152,1) 0%, rgba(222,244,169,1) 100%);
+}
+
+.integration-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0 4rem 4rem;
+}
+
+.integration-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.integration-main,
+.top-container,
+.middle-container,
+.bottom-container {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.integration-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-container {
+    grid-template-columns: 2fr 3fr;
+    text-align: right;
+}
+
+.middle-container {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.bottom-container {
+    grid-template-columns: 3fr 2fr;
+}
+
+.card {
+    padding: 1.75rem 1.25rem;
+    background-color: var(--green-50);
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.middle-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.middle-container .middle-card:nth-child(2) {
+    flex-direction: column-reverse;
+}
+
+.bottom-container .card {
+    grid-template-columns: 4fr 1fr;
+}
+
+.integration-icon {
+    width: 5rem;
+    height: auto;
+}
+
+.developers-section {
+    background: linear-gradient(0deg, rgba(155,171,118,1) 0%, rgba(200,220,152,1) 100%);
+}
+
+.developers-section-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.developers-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.developers-main {
+    padding: 3rem 0;
+    width: 10rem;
+    display: flex;
+}
+
+.expertise-section {
+    background: linear-gradient(0deg, rgba(111,122,84,1) 0%, rgba(155,171,118,1) 100%);
+}
+
+.expertise-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 6rem;
+}
+
+.expertise-header {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.expertise-main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.expertise-img {
+    max-width: 50rem;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.expertise-card {
+    max-width: 20rem;
+    background-color: var(--green-50);
+    border-radius: 1rem;
+    padding: 2rem 1.25rem;
+    position: absolute;
+
+}
+
+.expertise-card-solution {
+    right: 3rem;
+    bottom: 1.75rem;
+}
+
+.expertise-card-team {
+    left: 0;
+    bottom: -2rem;
+}
+
+.expertise-card-interface {
+    top: 0;
+    left: 40%;
+    transform: translateX(-50%);
+}
+
+.partnership-section {
+    background: linear-gradient(0deg, rgba(67,73,51,1) 0%, rgba(111,122,84,1) 100%);
+}
+
+.partnership-section-wrapper {
+    position: relative;
+}
+
+.partnership-card {
+    background-color: var(--green-50);
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    position: relative;
+    z-index: 1;
+} 
+
+.graph-bg.partnership-graph-top,
+.graph-bg.partnership-graph-bottom {
+    width: 18rem;
+    height: 18rem;
+}
+
+.partnership-graph-top {
+    top: 0;
+    right: 0;
+}
+
+.partnership-graph-bottom {
+    bottom: 0;
+    left: 0;
+}
+
+.partnership-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
