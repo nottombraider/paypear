@@ -46,12 +46,14 @@
 }
 
 .main-text {
+    font-family: Nunito, sans-serif;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 300;
 }
 
 .secondary-text {
+    font-family: Nunito, sans-serif;
     font-size: 0.85rem;
     line-height: 1rem;
     font-weight: 300;
