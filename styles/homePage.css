@@ -193,13 +193,14 @@
 
 .integration-card {
     max-width: 20rem;
-    height: 20rem;
+    height: 18rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     gap: 1.5rem;
     padding: 2rem 1.5rem;
     border-radius: 0.75rem;
-    background-color: #FFFFFF;
+    background-color: var(--green-50);
     z-index: 1;
 }
 
