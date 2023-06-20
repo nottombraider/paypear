@@ -143,6 +143,10 @@
 
 
 @media (min-width: 320px) and (max-width: 540px) {
+    .main {
+        height: unset;
+    }
+
     .main-wrapper {
         padding: 3rem 1rem;
     }
@@ -209,6 +213,8 @@
 
     .content-main {
         width: 100%;
+        max-width: 40rem;
+        margin: auto;
     }
 
     .contact-form-section {
