@@ -1,6 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: Comfortaa
-- Font Author: Copyright 2011 The Comfortaa Project Authors (https://github.com/alexeiva/comfortaa), with Reserved Font Name "Comfortaa".
-- Font Source: http://fonts.gstatic.com/s/comfortaa/v40/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4VrMPrQVIT9c2c8.ttf
+- Font Title: Quicksand
+- Font Author: Copyright 2019 The Quicksand Project Authors (https://github.com/andrew-paglinawan/QuicksandFamily.git), with Reserved Font Name "Quicksand"
+- Font Source: http://fonts.gstatic.com/s/quicksand/v30/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkBgv18G0wx40QDw.ttf
 - Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
