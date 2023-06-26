@@ -659,8 +659,16 @@
         flex-direction: column;
     }
 
+    .settlements-section {
+        padding: 4rem 2rem;
+    }
+
     .settlements-section-wrapper {
         flex-direction: column-reverse;
+    }
+
+    .settlements-header {
+        margin-top: 2rem;
     }
 
     .settlements-card-absolute {
